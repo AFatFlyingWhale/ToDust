@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.70,
+  "ingredient": {
+    "item": "todust:raw_relic_gold"
+  },
+  "result": "todust:relic_gold_ingot"
+}

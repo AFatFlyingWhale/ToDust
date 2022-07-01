@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.70,
+  "ingredient": {
+    "item": "todust:raw_relic_iron"
+  },
+  "result": "todust:relic_iron_ingot"
+}
