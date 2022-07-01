@@ -1,0 +1,45 @@
+{
+
+  "item.todust.fire_dust_crystal": "Fire Dust Crystal",
+  "item.todust.water_dust_crystal": "Water Dust Crystal",
+  "item.todust.earth_dust_crystal": "Earth Dust Crystal",
+  "item.todust.air_dust_crystal": "Air Dust Crystal",
+  "item.todust.lightning_dust_crystal": "Lightning Dust Crystal",
+  "item.todust.gravity_dust_crystal": "Gravity Dust Crystal",
+
+  "item.todust.relic_iron_ingot": "Relic Iron Ingot",
+  "item.todust.relic_gold_ingot": "Relic Gold Ingot",
+  "item.todust.mithril_ingot": "Mithril Ingot",
+  "item.todust.orichalcum_ingot": "Orichalcum Ingot",
+  "item.todust.adamantine_ingot": "Adamantine Ingot",
+
+  "item.todust.raw_relic_iron": "Raw Relic Iron",
+  "item.todust.raw_relic_gold": "Raw Relic Gold",
+  "item.todust.raw_mithril": "Raw Mithril",
+  "item.todust.raw_orichalcite": "Raw Orichalcite",
+  "item.todust.raw_adamantite": "Raw Adamantite",
+
+  "block.todust.relic_iron_block": "Block of Relic Iron",
+  "block.todust.relic_iron_ore": "Relic Iron Ore",
+  "block.todust.deepslate_relic_iron_ore": "Deepslate Relic Iron Ore",
+
+  "block.todust.relic_gold_block": "Block of Relic Gold",
+  "block.todust.relic_gold_ore": "Relic Gold Ore",
+  "block.todust.deepslate_relic_gold_ore": "Deepslate Relic Gold Ore",
+
+  "block.todust.mithril_block": "Block of Mithril",
+  "block.todust.mithril_ore": "Mithril Ore",
+  "block.todust.deepslate_mithril_ore": "Deepslate Mithril Ore",
+
+  "block.todust.orichalcum_block": "Block of Orichalcum",
+  "block.todust.orichalcite_ore": "Orichalcite Ore",
+  "block.todust.deepslate_orichalcite_ore": "Deepslate Orichalcite Ore",
+
+  "block.todust.adamantine_block": "Block of Adamantine",
+  "block.todust.adamantite_ore": "Adamantite Ore",
+  "block.todust.deepslate_adamantite_ore": "Deepslate Adamantite Ore",
+
+
+  "itemGroup.todust.todust": "To Dust"
+
+}

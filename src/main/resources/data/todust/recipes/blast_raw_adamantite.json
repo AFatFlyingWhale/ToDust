@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.75,
+  "ingredient": {
+    "item": "todust:raw_adamantite"
+  },
+  "result": "todust:adamantine_ingot"
+}
