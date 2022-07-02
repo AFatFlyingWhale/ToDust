@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "todust:block/raw_relic_iron_block"
+  }
+}

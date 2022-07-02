@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 900,
+  "experience": 6.75,
+  "ingredient": {
+    "item": "todust:raw_mithril_block"
+  },
+  "result": "todust:mithril_block"
+}

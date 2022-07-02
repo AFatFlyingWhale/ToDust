@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "todust:adamantine_block",
+    "todust:mithril_block",
+    "todust:orichalcum_block",
+    "todust:relic_iron_block",
+    "todust:relic_gold_block",
+    "todust:relic_iron_ore",
+    "todust:relic_gold_ore",
+    "todust:mithril_ore",
+    "todust:orichalcite_ore",
+    "todust:adamantite_ore",
+    "todust:deepslate_relic_iron_ore",
+    "todust:deepslate_relic_gold_ore",
+    "todust:deepslate_mithril_ore",
+    "todust:deepslate_orichalcite_ore",
+    "todust:deepslate_adamantite_ore",
+    "todust:raw_relic_iron_block",
+    "todust:raw_relic_gold_block",
+    "todust:raw_mithril_block",
+    "todust:raw_orichalcite_block",
+    "todust:raw_adamantite_block"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "todust:orichalcite_ore",
+    "todust:deepslate_orichalcite_ore",
+    "todust:orichalcum_block",
+    "todust:adamantite_ore",
+    "todust:deepslate_adamantite_ore",
+    "todust:adamantine_block",
+    "todust:raw_orichalcite_block",
+    "todust:raw_adamantite_block"
+  ]
+}

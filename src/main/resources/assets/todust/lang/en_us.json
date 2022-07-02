@@ -22,22 +22,27 @@
   "block.todust.relic_iron_block": "Block of Relic Iron",
   "block.todust.relic_iron_ore": "Relic Iron Ore",
   "block.todust.deepslate_relic_iron_ore": "Deepslate Relic Iron Ore",
+  "block.todust.raw_relic_iron_block": "Block of Raw Relic Iron",
 
   "block.todust.relic_gold_block": "Block of Relic Gold",
   "block.todust.relic_gold_ore": "Relic Gold Ore",
   "block.todust.deepslate_relic_gold_ore": "Deepslate Relic Gold Ore",
+  "block.todust.raw_relic_gold_block": "Block of Raw Relic Gold",
 
   "block.todust.mithril_block": "Block of Mithril",
   "block.todust.mithril_ore": "Mithril Ore",
   "block.todust.deepslate_mithril_ore": "Deepslate Mithril Ore",
+  "block.todust.raw_mithril_block": "Block of Raw Mithril",
 
   "block.todust.orichalcum_block": "Block of Orichalcum",
   "block.todust.orichalcite_ore": "Orichalcite Ore",
   "block.todust.deepslate_orichalcite_ore": "Deepslate Orichalcite Ore",
+  "block.todust.raw_orichalcite_block": "Block of Raw Orichalcite",
 
   "block.todust.adamantine_block": "Block of Adamantine",
   "block.todust.adamantite_ore": "Adamantite Ore",
   "block.todust.deepslate_adamantite_ore": "Deepslate Adamantite Ore",
+  "block.todust.raw_adamantite_block": "Block of Raw Adamantite",
 
 
   "itemGroup.todust.todust": "To Dust"
