@@ -40,6 +40,38 @@ public class ModBlocks {
     public static final Block RAW_ADAMANTITE_BLOCK = registerBlock("raw_adamantite_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
 
+    // Dust Blocks
+    //Fire Dust
+    public static final Block FIRE_DUST_BLOCK = registerBlock("fire_dust_block",
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block BUDDING_FIRE_DUST = registerBlock("budding_fire_dust",
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //Air Dust
+    public static final Block AIR_DUST_BLOCK = registerBlock("air_dust_block",
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block BUDDING_AIR_DUST = registerBlock("budding_air_dust",
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //Earth Dust
+    public static final Block EARTH_DUST_BLOCK = registerBlock("earth_dust_block",
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block BUDDING_EARTH_DUST = registerBlock("budding_earth_dust",
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //Water Dust
+    public static final Block WATER_DUST_BLOCK = registerBlock("water_dust_block",
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block BUDDING_WATER_DUST = registerBlock("budding_water_dust",
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //Lightning Dust
+    public static final Block LIGHTNING_DUST_BLOCK = registerBlock("lightning_dust_block",
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block BUDDING_LIGHTNING_DUST = registerBlock("budding_lightning_dust",
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //Gravity Dust
+    public static final Block GRAVITY_DUST_BLOCK = registerBlock("gravity_dust_block",
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block BUDDING_GRAVITY_DUST = registerBlock("budding_gravity_dust",
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+
     // Ores & Deepslate Ores
     // Relic Iron
     public static final Block RELIC_IRON_ORE = registerBlock("relic_iron_ore",
@@ -48,7 +80,6 @@ public class ModBlocks {
     public static final Block DEEPSLATE_RELIC_IRON_ORE = registerBlock("deepslate_relic_iron_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool(),
                     UniformIntProvider.create(3, 7)), ModItemGroup.TODUST);
-
     // Relic Gold
     public static final Block RELIC_GOLD_ORE = registerBlock("relic_gold_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(1.5f).requiresTool(),
@@ -56,7 +87,6 @@ public class ModBlocks {
     public static final Block DEEPSLATE_RELIC_GOLD_ORE = registerBlock("deepslate_relic_gold_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool(),
                     UniformIntProvider.create(3, 7)), ModItemGroup.TODUST);
-
     // Mithril
     public static final Block MITHRIL_ORE = registerBlock("mithril_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(1.5f).requiresTool(),
@@ -64,7 +94,6 @@ public class ModBlocks {
     public static final Block DEEPSLATE_MITHRIL_ORE = registerBlock("deepslate_mithril_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool(),
                     UniformIntProvider.create(3, 7)), ModItemGroup.TODUST);
-
     // Orichalcite
     public static final Block ORICHALCITE_ORE = registerBlock("orichalcite_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(1.5f).requiresTool(),
@@ -72,7 +101,6 @@ public class ModBlocks {
     public static final Block DEEPSLATE_ORICHALCITE_ORE = registerBlock("deepslate_orichalcite_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool(),
                     UniformIntProvider.create(3, 7)), ModItemGroup.TODUST);
-
     // Adamantite
     public static final Block ADAMANTITE_ORE = registerBlock("adamantite_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(1.5f).requiresTool(),

@@ -44,6 +44,23 @@
   "block.todust.deepslate_adamantite_ore": "Deepslate Adamantite Ore",
   "block.todust.raw_adamantite_block": "Block of Raw Adamantite",
 
+  "block.todust.fire_dust_block": "Block of Fire Dust",
+  "block.todust.budding_fire_dust": "Budding Fire Dust",
+
+  "block.todust.air_dust_block": "Block of Air Dust",
+  "block.todust.budding_air_dust": "Budding Air Dust",
+
+  "block.todust.earth_dust_block": "Block of Earth Dust",
+  "block.todust.budding_earth_dust": "Budding Earth Dust",
+
+  "block.todust.water_dust_block": "Block of Water Dust",
+  "block.todust.budding_water_dust": "Budding Water Dust",
+
+  "block.todust.lightning_dust_block": "Block of Lightning Dust",
+  "block.todust.budding_lightning_dust": "Budding Lightning Dust",
+
+  "block.todust.gravity_dust_block": "Block of Gravity Dust",
+  "block.todust.budding_gravity_dust": "Budding Gravity Dust",
 
   "itemGroup.todust.todust": "To Dust"
 

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "todust:gravity_dust_crystal"
+    }
+  },
+  "result": {
+    "item": "todust:gravity_dust_block"
+  }
+}

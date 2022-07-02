@@ -2,6 +2,7 @@ package net.afatflyingwhale.todust;
 
 import net.afatflyingwhale.todust.block.ModBlocks;
 import net.afatflyingwhale.todust.item.ModItems;
+import net.afatflyingwhale.todust.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,5 +16,6 @@ public class ToDust implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModRegistries.registerModStuff();
 	}
 }
