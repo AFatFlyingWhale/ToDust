@@ -2,7 +2,7 @@ package net.afatflyingwhale.todust.block;
 
 import net.afatflyingwhale.todust.ToDust;
 import net.afatflyingwhale.todust.item.ModItemGroup;
-import net.afatflyingwhale.todust.world.feature.tree.TwistedOakSaplingGenerator;
+import net.afatflyingwhale.todust.world.feature.tree.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -138,7 +138,7 @@ public class ModBlocks {
     public static final Block MAGEBANE_LEAVES = registerBlock("magebane_leaves",
             new Block(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.TODUST);
     public static final Block MAGEBANE_SAPLING = registerBlock("magebane_sapling",
-            new SaplingBlock(new TwistedOakSaplingGenerator(),
+            new SaplingBlock(new MagebaneSaplingGenerator(),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.TODUST);
     // Pyrewood
     public static final Block PYREWOOD_LOG = registerBlock("pyrewood_log",
@@ -154,7 +154,7 @@ public class ModBlocks {
     public static final Block PYREWOOD_LEAVES = registerBlock("pyrewood_leaves",
             new Block(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.TODUST);
     public static final Block PYREWOOD_SAPLING = registerBlock("pyrewood_sapling",
-            new SaplingBlock(new TwistedOakSaplingGenerator(),
+            new SaplingBlock(new PyrewoodSaplingGenerator(),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.TODUST);
     // Wisewillow
     public static final Block WISEWILLOW_LOG = registerBlock("wisewillow_log",
@@ -170,7 +170,7 @@ public class ModBlocks {
     public static final Block WISEWILLOW_LEAVES = registerBlock("wisewillow_leaves",
             new Block(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.TODUST);
     public static final Block WISEWILLOW_SAPLING = registerBlock("wisewillow_sapling",
-            new SaplingBlock(new TwistedOakSaplingGenerator(),
+            new SaplingBlock(new WisewillowSaplingGenerator(),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.TODUST);
     // Black Birch
     public static final Block BLACK_BIRCH_LOG = registerBlock("black_birch_log",
@@ -186,7 +186,7 @@ public class ModBlocks {
     public static final Block BLACK_BIRCH_LEAVES = registerBlock("black_birch_leaves",
             new Block(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.TODUST);
     public static final Block BLACK_BIRCH_SAPLING = registerBlock("black_birch_sapling",
-            new SaplingBlock(new TwistedOakSaplingGenerator(),
+            new SaplingBlock(new BlackBirchSaplingGenerator(),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.TODUST);
     // Red Heartnut
     public static final Block RED_HEARTNUT_LOG = registerBlock("red_heartnut_log",
@@ -202,7 +202,7 @@ public class ModBlocks {
     public static final Block RED_HEARTNUT_LEAVES = registerBlock("red_heartnut_leaves",
             new Block(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.TODUST);
     public static final Block RED_HEARTNUT_SAPLING = registerBlock("red_heartnut_sapling",
-            new SaplingBlock(new TwistedOakSaplingGenerator(),
+            new SaplingBlock(new RedHeartnutSaplingGenerator(),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.TODUST);
 
 

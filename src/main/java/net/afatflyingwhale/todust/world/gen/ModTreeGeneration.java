@@ -10,5 +10,15 @@ public class ModTreeGeneration {
     public static void generateTrees() {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.TWISTED_OAK_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.MAGEBANE_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.PYREWOOD_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.WISEWILLOW_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BLACK_BIRCH_PLACED.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.RED_HEARTNUT_PLACED.getKey().get());
     }
 }
