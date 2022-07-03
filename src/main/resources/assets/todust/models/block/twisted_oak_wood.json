@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "todust:block/twisted_oak_log",
+    "side": "todust:block/twisted_oak_log"
+  }
+}

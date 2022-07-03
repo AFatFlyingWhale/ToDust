@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "todust:twisted_oak_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "todust:twisted_oak_planks"
+  }
+}

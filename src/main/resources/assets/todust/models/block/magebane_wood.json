@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "todust:block/magebane_log",
+    "side": "todust:block/magebane_log"
+  }
+}

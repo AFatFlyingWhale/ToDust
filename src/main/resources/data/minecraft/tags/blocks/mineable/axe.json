@@ -1,6 +1,40 @@
 {
   "replace": false,
   "values": [
+    "todust:twisted_oak_log",
+    "todust:twisted_oak_wood",
+    "todust:stripped_twisted_oak_log",
+    "todust:stripped_twisted_oak_wood",
+    "todust:twisted_oak_planks",
 
+    "todust:magebane_log",
+    "todust:magebane_wood",
+    "todust:stripped_magebane_log",
+    "todust:stripped_magebane_wood",
+    "todust:magebane_planks",
+
+    "todust:pyrewood_log",
+    "todust:pyrewood_wood",
+    "todust:stripped_pyrewood_log",
+    "todust:stripped_pyrewood_wood",
+    "todust:pyrewood_planks",
+
+    "todust:wisewillow_log",
+    "todust:wisewillow_wood",
+    "todust:stripped_wisewillow_log",
+    "todust:stripped_wisewillow_wood",
+    "todust:wisewillow_planks",
+
+    "todust:black_birch_log",
+    "todust:black_birch_wood",
+    "todust:stripped_black_birch_log",
+    "todust:stripped_black_birch_wood",
+    "todust:black_birch_planks",
+
+    "todust:red_heartnut_log",
+    "todust:red_heartnut_wood",
+    "todust:stripped_red_heartnut_log",
+    "todust:stripped_red_heartnut_wood",
+    "todust:red_heartnut_planks"
   ]
 }

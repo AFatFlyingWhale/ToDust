@@ -46,6 +46,7 @@
 
   "block.todust.fire_dust_block": "Block of Fire Dust",
   "block.todust.budding_fire_dust": "Budding Fire Dust",
+  "block.todust.fire_dust_cluster": "Fire Dust Cluster",
 
   "block.todust.air_dust_block": "Block of Air Dust",
   "block.todust.budding_air_dust": "Budding Air Dust",
@@ -61,6 +62,54 @@
 
   "block.todust.gravity_dust_block": "Block of Gravity Dust",
   "block.todust.budding_gravity_dust": "Budding Gravity Dust",
+
+  "block.todust.twisted_oak_log": "Twisted Oak Log",
+  "block.todust.twisted_oak_wood": "Twisted Oak Bark",
+  "block.todust.stripped_twisted_oak_log": "Stripped Twisted Oak Log",
+  "block.todust.stripped_twisted_oak_wood": "Stripped Twisted Oak Bark",
+  "block.todust.twisted_oak_planks": "Twisted Oak Planks",
+  "block.todust.twisted_oak_leaves": "Twisted Oak Leaves",
+  "block.todust.twisted_oak_sapling": "Twisted Oak Sapling",
+
+  "block.todust.wisewillow_log": "Wisewillow Log",
+  "block.todust.wisewillow_wood": "Wisewillow Bark",
+  "block.todust.stripped_wisewillow_log": "Stripped Wisewillow Log",
+  "block.todust.stripped_wisewillow_wood": "Stripped Wisewillow Bark",
+  "block.todust.wisewillow_planks": "Wisewillow Planks",
+  "block.todust.wisewillow_leaves": "Wisewillow Leaves",
+  "block.todust.wisewillow_sapling": "Wisewillow Sapling",
+
+  "block.todust.black_birch_log": "Black Birch Log",
+  "block.todust.black_birch_wood": "Black Birch Bark",
+  "block.todust.stripped_black_birch_log": "Stripped Black Birch Log",
+  "block.todust.stripped_black_birch_wood": "Stripped Black Birch Bark",
+  "block.todust.black_birch_planks": "Black Birch Planks",
+  "block.todust.black_birch_leaves": "Black Birch Leaves",
+  "block.todust.black_birch_sapling": "Black Birch Sapling",
+
+  "block.todust.magebane_log": "Magebane Log",
+  "block.todust.magebane_wood": "Magebane Bark",
+  "block.todust.stripped_magebane_log": "Stripped Magebane Log",
+  "block.todust.stripped_magebane_wood": "Stripped Magebane Bark",
+  "block.todust.magebane_planks": "Magebane Planks",
+  "block.todust.magebane_leaves": "Magebane Leaves",
+  "block.todust.magebane_sapling": "Magebane Sapling",
+
+  "block.todust.pyrewood_log": "Pyrewood Log",
+  "block.todust.pyrewood_wood": "Pyrewood Bark",
+  "block.todust.stripped_pyrewood_log": "Stripped Pyrewood Log",
+  "block.todust.stripped_pyrewood_wood": "Stripped Pyrewood Bark",
+  "block.todust.pyrewood_planks": "Pyrewood Planks",
+  "block.todust.pyrewood_leaves": "Pyrewood Leaves",
+  "block.todust.pyrewood_sapling": "Pyrewood Sapling",
+
+  "block.todust.red_heartnut_log": "Red Heartnut Log",
+  "block.todust.red_heartnut_wood": "Red Heartnut Bark",
+  "block.todust.stripped_red_heartnut_log": "Stripped Red Heartnut Log",
+  "block.todust.stripped_red_heartnut_wood": "Stripped Red Heartnut Bark",
+  "block.todust.red_heartnut_planks": "Red Heartnut Planks",
+  "block.todust.red_heartnut_leaves": "Red Heartnut Leaves",
+  "block.todust.red_heartnut_sapling": "Red Heartnut Sapling",
 
   "itemGroup.todust.todust": "To Dust"
 

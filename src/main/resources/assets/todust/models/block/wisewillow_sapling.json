@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "todust:block/wisewillow_sapling"
+  }
+}

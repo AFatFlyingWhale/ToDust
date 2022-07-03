@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "todust:block/stripped_red_heartnut_log",
+    "side": "todust:block/stripped_red_heartnut_log"
+  }
+}

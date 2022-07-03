@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "todust:block/magebane_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "todust:block/magebane_log"
+    },
+    "axis=z": {
+      "model": "todust:block/magebane_log",
+      "x": 90
+    }
+  }
+}
