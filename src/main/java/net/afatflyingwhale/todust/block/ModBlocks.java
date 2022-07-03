@@ -1,7 +1,10 @@
 package net.afatflyingwhale.todust.block;
 
+import com.google.common.collect.ImmutableList;
 import net.afatflyingwhale.todust.ToDust;
+import net.afatflyingwhale.todust.block.custom.GeodeBuddingBlock;
 import net.afatflyingwhale.todust.item.ModItemGroup;
+import net.afatflyingwhale.todust.sounds.ModBlockSoundGroups;
 import net.afatflyingwhale.todust.world.feature.tree.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -39,37 +42,72 @@ public class ModBlocks {
     public static final Block RAW_ADAMANTITE_BLOCK = registerBlock("raw_adamantite_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
 
+    // Dust Clusters
+    // Fire Dust
+    public static AmethystClusterBlock FIRE_DUST_CLUSTER = new AmethystClusterBlock(7, 3, FabricBlockSettings.of(Material.AMETHYST, MapColor.BRIGHT_RED).nonOpaque().requiresTool().ticksRandomly().sounds(ModBlockSoundGroups.DUST_CLUSTER).strength(1.5f).luminance((blockState) -> 5));
+    public static AmethystClusterBlock LARGE_FIRE_DUST_BUD = new AmethystClusterBlock(5,3, FabricBlockSettings.of(Material.AMETHYST, MapColor.BRIGHT_RED).nonOpaque().requiresTool().ticksRandomly().sounds(ModBlockSoundGroups.LARGE_DUST_BUD).strength(1.5f).luminance((blockState) -> 4));
+    public static AmethystClusterBlock MEDIUM_FIRE_DUST_BUD = new AmethystClusterBlock(4,3, FabricBlockSettings.of(Material.AMETHYST, MapColor.BRIGHT_RED).nonOpaque().requiresTool().ticksRandomly().sounds(ModBlockSoundGroups.MEDIUM_DUST_BUD).strength(1.5f).luminance((blockState) -> 2));
+    public static AmethystClusterBlock SMALL_FIRE_DUST_BUD = new AmethystClusterBlock(3,4, FabricBlockSettings.of(Material.AMETHYST, MapColor.BRIGHT_RED).nonOpaque().requiresTool().ticksRandomly().sounds(ModBlockSoundGroups.SMALL_DUST_BUD).strength(1.5f).luminance((blockState) -> 1));
+
     // Dust Blocks
+    public static AmethystBlock FIRE_DUST_BLOCK = new AmethystBlock(FabricBlockSettings.of(Material.AMETHYST, MapColor.BRIGHT_RED).strength(1.5f).sounds(ModBlockSoundGroups.DUST_GEODE).requiresTool());
+    public static AmethystBlock AIR_DUST_BLOCK = new AmethystBlock(FabricBlockSettings.of(Material.AMETHYST, MapColor.WHITE).strength(1.5f).sounds(ModBlockSoundGroups.DUST_GEODE).requiresTool());
+    public static AmethystBlock EARTH_DUST_BLOCK = new AmethystBlock(FabricBlockSettings.of(Material.AMETHYST, MapColor.LIME).strength(1.5f).sounds(ModBlockSoundGroups.DUST_GEODE).requiresTool());
+    public static AmethystBlock WATER_DUST_BLOCK = new AmethystBlock(FabricBlockSettings.of(Material.AMETHYST, MapColor.BLUE).strength(1.5f).sounds(ModBlockSoundGroups.DUST_GEODE).requiresTool());
+    public static AmethystBlock LIGHTNING_DUST_BLOCK = new AmethystBlock(FabricBlockSettings.of(Material.AMETHYST, MapColor.YELLOW).strength(1.5f).sounds(ModBlockSoundGroups.DUST_GEODE).requiresTool());
+    public static AmethystBlock GRAVITY_DUST_BLOCK = new AmethystBlock(FabricBlockSettings.of(Material.AMETHYST, MapColor.BLACK).strength(1.5f).sounds(ModBlockSoundGroups.DUST_GEODE).requiresTool());
+    // Budding Dust Blocks
+    public static GeodeBuddingBlock BUDDING_FIRE_DUST = new GeodeBuddingBlock(
+            FabricBlockSettings.of(Material.AMETHYST, MapColor.BRIGHT_RED).ticksRandomly().strength(1.5f).sounds(ModBlockSoundGroups.DUST_GEODE).requiresTool(),
+            ImmutableList.of(SMALL_FIRE_DUST_BUD, MEDIUM_FIRE_DUST_BUD, LARGE_FIRE_DUST_BUD, FIRE_DUST_CLUSTER));
+    public static GeodeBuddingBlock BUDDING_AIR_DUST = new GeodeBuddingBlock(
+            FabricBlockSettings.of(Material.AMETHYST, MapColor.WHITE).ticksRandomly().strength(1.5f).sounds(ModBlockSoundGroups.DUST_GEODE).requiresTool(),
+            ImmutableList.of(SMALL_AIR_DUST_BUD, MEDIUM_AIR_DUST_BUD, LARGE_AIR_DUST_BUD, AIR_DUST_CLUSTER));
+    public static GeodeBuddingBlock BUDDING_EARTH_DUST = new GeodeBuddingBlock(
+            FabricBlockSettings.of(Material.AMETHYST, MapColor.LIME).ticksRandomly().strength(1.5f).sounds(ModBlockSoundGroups.DUST_GEODE).requiresTool(),
+            ImmutableList.of(SMALL_EARTH_DUST_BUD, MEDIUM_EARTH_DUST_BUD, LARGE_EARTH_DUST_BUD, EARTH_DUST_CLUSTER));
+    public static GeodeBuddingBlock BUDDING_WATER_DUST = new GeodeBuddingBlock(
+            FabricBlockSettings.of(Material.AMETHYST, MapColor.BLUE).ticksRandomly().strength(1.5f).sounds(ModBlockSoundGroups.DUST_GEODE).requiresTool(),
+            ImmutableList.of(SMALL_WATER_DUST_BUD, MEDIUM_WATER_DUST_BUD, LARGE_WATER_DUST_BUD, WATER_DUST_CLUSTER));
+    public static GeodeBuddingBlock BUDDING_LIGHTNING_DUST = new GeodeBuddingBlock(
+            FabricBlockSettings.of(Material.AMETHYST, MapColor.YELLOW).ticksRandomly().strength(1.5f).sounds(ModBlockSoundGroups.DUST_GEODE).requiresTool(),
+            ImmutableList.of(SMALL_LIGHTNING_DUST_BUD, MEDIUM_LIGHTNING_DUST_BUD, LARGE_LIGHTNING_DUST_BUD, LIGHTNING_DUST_CLUSTER));
+    public static GeodeBuddingBlock BUDDING_GRAVITY_DUST = new GeodeBuddingBlock(
+            FabricBlockSettings.of(Material.AMETHYST, MapColor.BLACK).ticksRandomly().strength(1.5f).sounds(ModBlockSoundGroups.DUST_GEODE).requiresTool(),
+            ImmutableList.of(SMALL_GRAVITY_DUST_BUD, MEDIUM_GRAVITY_DUST_BUD, LARGE_GRAVITY_DUST_BUD, GRAVITY_DUST_CLUSTER));
+
+    // DEPRECATED DUST CODE
     //Fire Dust
-    public static final Block FIRE_DUST_BLOCK = registerBlock("fire_dust_block",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
-    public static final Block BUDDING_FIRE_DUST = registerBlock("budding_fire_dust",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //public static final Block FIRE_DUST_BLOCK = registerBlock("fire_dust_block",
+      //      new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //public static final Block BUDDING_FIRE_DUST = registerBlock("budding_fire_dust",
+      //      new GeodeBuddingBlock(FabricBlockSettings.of(Material.AMETHYST, MapColor.BRIGHT_RED).ticksRandomly().strength(1.5f).sounds(ModBlockSoundGroups.DUST_GEODE).requiresTool(),
+        //            ImmutableList.of(SMALL_FIRE_DUST_BUD, MEDIUM_FIRE_DUST_BUD, LARGE_FIRE_DUST_BUD, FIRE_DUST_CLUSTER)));
     //Air Dust
-    public static final Block AIR_DUST_BLOCK = registerBlock("air_dust_block",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
-    public static final Block BUDDING_AIR_DUST = registerBlock("budding_air_dust",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //public static final Block AIR_DUST_BLOCK = registerBlock("air_dust_block",
+      //      new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //public static final Block BUDDING_AIR_DUST = registerBlock("budding_air_dust",
+      //      new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
     //Earth Dust
-    public static final Block EARTH_DUST_BLOCK = registerBlock("earth_dust_block",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
-    public static final Block BUDDING_EARTH_DUST = registerBlock("budding_earth_dust",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //public static final Block EARTH_DUST_BLOCK = registerBlock("earth_dust_block",
+      //      new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //public static final Block BUDDING_EARTH_DUST = registerBlock("budding_earth_dust",
+      //      new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
     //Water Dust
-    public static final Block WATER_DUST_BLOCK = registerBlock("water_dust_block",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
-    public static final Block BUDDING_WATER_DUST = registerBlock("budding_water_dust",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //public static final Block WATER_DUST_BLOCK = registerBlock("water_dust_block",
+      //      new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //public static final Block BUDDING_WATER_DUST = registerBlock("budding_water_dust",
+      //      new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
     //Lightning Dust
-    public static final Block LIGHTNING_DUST_BLOCK = registerBlock("lightning_dust_block",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
-    public static final Block BUDDING_LIGHTNING_DUST = registerBlock("budding_lightning_dust",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //public static final Block LIGHTNING_DUST_BLOCK = registerBlock("lightning_dust_block",
+      //      new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //public static final Block BUDDING_LIGHTNING_DUST = registerBlock("budding_lightning_dust",
+      //      new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
     //Gravity Dust
-    public static final Block GRAVITY_DUST_BLOCK = registerBlock("gravity_dust_block",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
-    public static final Block BUDDING_GRAVITY_DUST = registerBlock("budding_gravity_dust",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //public static final Block GRAVITY_DUST_BLOCK = registerBlock("gravity_dust_block",
+      //      new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
+    //public static final Block BUDDING_GRAVITY_DUST = registerBlock("budding_gravity_dust",
+      //      new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool()), ModItemGroup.TODUST);
 
     // Ores & Deepslate Ores
     // Relic Iron
@@ -207,8 +245,53 @@ public class ModBlocks {
 
 
     // TEMPORARY TEST BLOCKS
-    public static final Block FIRE_DUST_CLUSTER = registerBlock("fire_dust_cluster",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool().nonOpaque().breakInstantly().collidable(false).luminance(7)), ModItemGroup.TODUST);
+    //public static final Block FIRE_DUST_CLUSTER = registerBlock("fire_dust_cluster",
+            //new Block(FabricBlockSettings.of(Material.AMETHYST).strength(1f).requiresTool().nonOpaque().breakInstantly().collidable(false).luminance(7)), ModItemGroup.TODUST);
+
+// REGISTRY CODE
+    public static void registerDustBlocks() {
+        registerBeta("fire_dust_block", FIRE_DUST_BLOCK);
+        registerBeta("budding_fire_dust", BUDDING_FIRE_DUST);
+        registerBeta("fire_dust_cluster", FIRE_DUST_CLUSTER);
+        registerBeta("large_fire_dust_bud", LARGE_FIRE_DUST_BUD);
+        registerBeta("medium_fire_dust_bud", MEDIUM_FIRE_DUST_BUD);
+        registerBeta("small_fire_dust_bud", SMALL_FIRE_DUST_BUD);
+
+        registerBeta("air_dust_block", AIR_DUST_BLOCK);
+        registerBeta("budding_air_dust", BUDDING_AIR_DUST);
+        registerBeta("air_dust_cluster", AIR_DUST_CLUSTER);
+        registerBeta("large_air_dust_bud", LARGE_AIR_DUST_BUD);
+        registerBeta("medium_air_dust_bud", MEDIUM_AIR_DUST_BUD);
+        registerBeta("small_air_dust_bud", SMALL_AIR_DUST_BUD);
+
+        registerBeta("earth_dust_block", EARTH_DUST_BLOCK);
+        registerBeta("budding_earth_dust", BUDDING_EARTH_DUST);
+        registerBeta("earth_dust_cluster", EARTH_DUST_CLUSTER);
+        registerBeta("large_earth_dust_bud", LARGE_EARTH_DUST_BUD);
+        registerBeta("medium_earth_dust_bud", MEDIUM_EARTH_DUST_BUD);
+        registerBeta("small_earth_dust_bud", SMALL_EARTH_DUST_BUD);
+
+        registerBeta("water_dust_block", WATER_DUST_BLOCK);
+        registerBeta("budding_water_dust", BUDDING_WATER_DUST);
+        registerBeta("water_dust_cluster", WATER_DUST_CLUSTER);
+        registerBeta("large_water_dust_bud", LARGE_WATER_DUST_BUD);
+        registerBeta("medium_water_dust_bud", MEDIUM_WATER_DUST_BUD);
+        registerBeta("small_water_dust_bud", SMALL_WATER_DUST_BUD);
+
+        registerBeta("lightning_dust_block", LIGHTNING_DUST_BLOCK);
+        registerBeta("budding_lightning_dust", BUDDING_LIGHTNING_DUST);
+        registerBeta("lightning_dust_cluster", LIGHTNING_DUST_CLUSTER);
+        registerBeta("large_lightning_dust_bud", LARGE_LIGHTNING_DUST_BUD);
+        registerBeta("medium_lightning_dust_bud", MEDIUM_LIGHTNING_DUST_BUD);
+        registerBeta("small_lightning_dust_bud", SMALL_LIGHTNING_DUST_BUD);
+
+        registerBeta("gravity_dust_block", GRAVITY_DUST_BLOCK);
+        registerBeta("budding_gravity_dust", BUDDING_GRAVITY_DUST);
+        registerBeta("gravity_dust_cluster", GRAVITY_DUST_CLUSTER);
+        registerBeta("large_gravity_dust_bud", LARGE_GRAVITY_DUST_BUD);
+        registerBeta("medium_gravity_dust_bud", MEDIUM_GRAVITY_DUST_BUD);
+        registerBeta("small_gravity_dust_bud", SMALL_GRAVITY_DUST_BUD);
+    }
 
 
 // REQUIRED CODE
@@ -221,6 +304,10 @@ public class ModBlocks {
     private static Item registerBlockItem(String name, Block block, ItemGroup tab) {
         return Registry.register(Registry.ITEM,
                 new Identifier(ToDust.MOD_ID, name), new BlockItem(block, new FabricItemSettings().group(tab)));
+    }
+
+    private static void registerBeta(String name, Block block) {
+        Registry.register(Registry.BLOCK, new Identifier(ToDust.MOD_ID, name), block);
     }
 
     public static void registerModBlocks() {

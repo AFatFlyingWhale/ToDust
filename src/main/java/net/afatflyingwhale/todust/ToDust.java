@@ -20,6 +20,7 @@ public class ToDust implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModBlocks.registerDustBlocks();
 		ModRegistries.registerModStuff();
 
 		ModWorldGen.generateModWorldGen();

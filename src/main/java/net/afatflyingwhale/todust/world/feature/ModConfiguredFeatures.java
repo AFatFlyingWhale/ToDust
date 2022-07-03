@@ -2,14 +2,18 @@ package net.afatflyingwhale.todust.world.feature;
 
 import net.afatflyingwhale.todust.ToDust;
 import net.afatflyingwhale.todust.block.ModBlocks;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.ThreeLayersFeatureSize;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.*;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.stateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.trunk.*;
 
 import java.util.List;
@@ -172,8 +176,34 @@ public class ModConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> ADAMANTITE_ORE =
             ConfiguredFeatures.register("adamantite_ore",Feature.ORE,
                     new OreFeatureConfig(OVERWORLD_ADAMANTITE_ORES, 3));
+    //------------------
+    // GEODES
+    //------------------
+    public static final RegistryEntry<ConfiguredFeature<?, ?>> FIRE_GEODE;
+    //public static final RegistryEntry<ConfiguredFeature<?, ?>> AIR_GEODE;
+    //public static final RegistryEntry<ConfiguredFeature<?, ?>> EARTH_GEODE;
+    //public static final RegistryEntry<ConfiguredFeature<?, ?>> WATER_GEODE;
+    //public static final RegistryEntry<ConfiguredFeature<?, ?>> LIGHTNING_GEODE;
+    //public static final RegistryEntry<ConfiguredFeature<?, ?>> GRAVITY_GEODE;
 
+    private static RegistryEntry<ConfiguredFeature<?, ?>> register(String id, ConfiguredFeature<?, ?> configuredFeature) {
+        return BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ToDust.MOD_ID, id), configuredFeature);
+    }
 
+    static {
+        FIRE_GEODE = register("fire_geode", new ConfiguredFeature<>(Feature.GEODE, new GeodeFeatureConfig
+                (
+                        new GeodeLayerConfig
+                                (
+                                        SimpleBlockStateProvider.of(Blocks.AIR.getDefaultState()),
+                                        SimpleBlockStateProvider.of(ModBlocks.FIRE_DUST_BLOCK.getDefaultState()),
+                                        SimpleBlockStateProvider.of(ModBlocks.BUDDING_FIRE_DUST.getDefaultState()),
+                                        SimpleBlockStateProvider.of(Blocks.MAGMA_BLOCK.getDefaultState()),
+                                        SimpleBlockStateProvider.of(Blocks.SMOOTH_BASALT.getDefaultState()),
+                                        ModBlocks.BUDDING_FIRE_DUST.getClusterStates()
+                        )
+        )))
+    }
 
 
     public static void registerConfiguredFeatures() {
