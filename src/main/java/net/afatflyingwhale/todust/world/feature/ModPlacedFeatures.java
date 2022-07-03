@@ -48,14 +48,14 @@ public class ModPlacedFeatures {
                     HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-80), YOffset.aboveBottom(80))));
     // Mithril
     public static final RegistryEntry<PlacedFeature> MITHRIL_PLACED = PlacedFeatures.register("mithril_placed",
-            ModConfiguredFeatures.MITHRIL_ORE, ModOreFeatures.modifiersWithCount(100,
+            ModConfiguredFeatures.MITHRIL_ORE, ModOreFeatures.modifiersWithCount(10,
                     HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-80), YOffset.aboveBottom(80))));
     // Orichalcite
     public static final RegistryEntry<PlacedFeature> ORICHALCITE_PLACED = PlacedFeatures.register("orichalcite_placed",
-            ModConfiguredFeatures.ORICHALCITE_ORE, ModOreFeatures.modifiersWithCount(70,
+            ModConfiguredFeatures.ORICHALCITE_ORE, ModOreFeatures.modifiersWithCount(7,
                     HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-40), YOffset.aboveBottom(40))));
     // Adamantite
     public static final RegistryEntry<PlacedFeature> ADAMANTITE_PLACED = PlacedFeatures.register("adamantite_placed",
-            ModConfiguredFeatures.ADAMANTITE_ORE, ModOreFeatures.modifiersWithCount(70,
+            ModConfiguredFeatures.ADAMANTITE_ORE, ModOreFeatures.modifiersWithCount(7,
                     HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-40), YOffset.aboveBottom(40))));
 }
