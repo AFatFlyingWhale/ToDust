@@ -19,6 +19,8 @@
   "item.todust.raw_orichalcite": "Raw Orichalcite",
   "item.todust.raw_adamantite": "Raw Adamantite",
 
+
+
   "block.todust.relic_iron_block": "Block of Relic Iron",
   "block.todust.relic_iron_ore": "Relic Iron Ore",
   "block.todust.deepslate_relic_iron_ore": "Deepslate Relic Iron Ore",
@@ -47,21 +49,44 @@
   "block.todust.fire_dust_block": "Block of Fire Dust",
   "block.todust.budding_fire_dust": "Budding Fire Dust",
   "block.todust.fire_dust_cluster": "Fire Dust Cluster",
+  "block.todust.small_fire_dust_bud": "Small Fire Dust Bud",
+  "block.todust.medium_fire_dust_bud": "Medium Fire Dust Bud",
+  "block.todust.large_fire_dust_bud": "Large Fire Dust Bud",
 
   "block.todust.air_dust_block": "Block of Air Dust",
   "block.todust.budding_air_dust": "Budding Air Dust",
+  "block.todust.air_dust_cluster": "Air Dust Cluster",
+  "block.todust.small_air_dust_bud": "Small Air Dust Bud",
+  "block.todust.medium_air_dust_bud": "Medium Air Dust Bud",
+  "block.todust.large_air_dust_bud": "Large Air Dust Bud",
 
   "block.todust.earth_dust_block": "Block of Earth Dust",
   "block.todust.budding_earth_dust": "Budding Earth Dust",
+  "block.todust.earth_dust_cluster": "Earth Dust Cluster",
+  "block.todust.small_earth_dust_bud": "Small Earth Dust Bud",
+  "block.todust.medium_earth_dust_bud": "Medium Earth Dust Bud",
+  "block.todust.large_earth_dust_bud": "Large Earth Dust Bud",
 
   "block.todust.water_dust_block": "Block of Water Dust",
   "block.todust.budding_water_dust": "Budding Water Dust",
+  "block.todust.water_dust_cluster": "Water Dust Cluster",
+  "block.todust.small_water_dust_bud": "Small Water Dust Bud",
+  "block.todust.medium_water_dust_bud": "Medium Water Dust Bud",
+  "block.todust.large_water_dust_bud": "Large Water Dust Bud",
 
   "block.todust.lightning_dust_block": "Block of Lightning Dust",
   "block.todust.budding_lightning_dust": "Budding Lightning Dust",
+  "block.todust.lightning_dust_cluster": "Lightning Dust Cluster",
+  "block.todust.small_lightning_dust_bud": "Small Lightning Dust Bud",
+  "block.todust.medium_lightning_dust_bud": "Medium Lightning Dust Bud",
+  "block.todust.large_lightning_dust_bud": "Large Lightning Dust Bud",
 
   "block.todust.gravity_dust_block": "Block of Gravity Dust",
   "block.todust.budding_gravity_dust": "Budding Gravity Dust",
+  "block.todust.gravity_dust_cluster": "Gravity Dust Cluster",
+  "block.todust.small_gravity_dust_bud": "Small Gravity Dust Bud",
+  "block.todust.medium_gravity_dust_bud": "Medium Gravity Dust Bud",
+  "block.todust.large_gravity_dust_bud": "Large Gravity Dust Bud",
 
   "block.todust.twisted_oak_log": "Twisted Oak Log",
   "block.todust.twisted_oak_wood": "Twisted Oak Bark",
@@ -110,6 +135,8 @@
   "block.todust.red_heartnut_planks": "Red Heartnut Planks",
   "block.todust.red_heartnut_leaves": "Red Heartnut Leaves",
   "block.todust.red_heartnut_sapling": "Red Heartnut Sapling",
+
+
 
   "itemGroup.todust.todust": "To Dust"
 

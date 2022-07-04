@@ -4,6 +4,7 @@ import net.afatflyingwhale.todust.block.ModBlocks;
 import net.afatflyingwhale.todust.item.ModItems;
 import net.afatflyingwhale.todust.util.ModRegistries;
 import net.afatflyingwhale.todust.world.feature.ModConfiguredFeatures;
+import net.afatflyingwhale.todust.world.feature.ModGeodeFeatures;
 import net.afatflyingwhale.todust.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -19,8 +20,10 @@ public class ToDust implements ModInitializer {
 		ModConfiguredFeatures.registerConfiguredFeatures();
 
 		ModItems.registerModItems();
+		ModItems.registerDustItems();
 		ModBlocks.registerModBlocks();
 		ModBlocks.registerDustBlocks();
+		ModGeodeFeatures.placeGeodesInBiomes();
 		ModRegistries.registerModStuff();
 
 		ModWorldGen.generateModWorldGen();

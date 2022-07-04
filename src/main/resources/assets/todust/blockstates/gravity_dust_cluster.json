@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "todust:block/gravity_dust_cluster",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "todust:block/gravity_dust_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "todust:block/gravity_dust_cluster",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "todust:block/gravity_dust_cluster",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "todust:block/gravity_dust_cluster"
+    },
+    "facing=west": {
+      "model": "todust:block/gravity_dust_cluster",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

@@ -1,28 +1,28 @@
 {
   "variants": {
     "facing=down": {
-      "model": "todust:block/fire_dust_cluster",
+      "model": "todust:block/small_air_dust_bud",
       "x": 180
     },
     "facing=east": {
-      "model": "todust:block/fire_dust_cluster",
+      "model": "todust:block/small_air_dust_bud",
       "x": 90,
       "y": 90
     },
     "facing=north": {
-      "model": "todust:block/fire_dust_cluster",
+      "model": "todust:block/small_air_dust_bud",
       "x": 90
     },
     "facing=south": {
-      "model": "todust:block/fire_dust_cluster",
+      "model": "todust:block/small_air_dust_bud",
       "x": 90,
       "y": 180
     },
     "facing=up": {
-      "model": "todust:block/fire_dust_cluster"
+      "model": "todust:block/small_air_dust_bud"
     },
     "facing=west": {
-      "model": "todust:block/fire_dust_cluster",
+      "model": "todust:block/small_air_dust_bud",
       "x": 90,
       "y": 270
     }

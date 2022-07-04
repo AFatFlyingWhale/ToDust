@@ -1,7 +1,10 @@
 package net.afatflyingwhale.todust.item;
 
 import net.afatflyingwhale.todust.ToDust;
+import net.afatflyingwhale.todust.block.ModBlocks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.block.Block;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
@@ -22,6 +25,50 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item GRAVITY_DUST_CRYSTAL = registerItem("gravity_dust_crystal",
             new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    // Dust Geodes
+    public static Item FIRE_DUST_BLOCK = new BlockItem(ModBlocks.FIRE_DUST_BLOCK, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item BUDDING_FIRE_DUST = new BlockItem(ModBlocks.BUDDING_FIRE_DUST, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item SMALL_FIRE_DUST_BUD = new BlockItem(ModBlocks.SMALL_FIRE_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item MEDIUM_FIRE_DUST_BUD = new BlockItem(ModBlocks.MEDIUM_FIRE_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item LARGE_FIRE_DUST_BUD = new BlockItem(ModBlocks.LARGE_FIRE_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item FIRE_DUST_CLUSTER = new BlockItem(ModBlocks.FIRE_DUST_CLUSTER, new Item.Settings().group(ModItemGroup.TODUST));
+
+    public static Item AIR_DUST_BLOCK = new BlockItem(ModBlocks.AIR_DUST_BLOCK, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item BUDDING_AIR_DUST = new BlockItem(ModBlocks.BUDDING_AIR_DUST, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item SMALL_AIR_DUST_BUD = new BlockItem(ModBlocks.SMALL_AIR_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item MEDIUM_AIR_DUST_BUD = new BlockItem(ModBlocks.MEDIUM_AIR_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item LARGE_AIR_DUST_BUD = new BlockItem(ModBlocks.LARGE_AIR_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item AIR_DUST_CLUSTER = new BlockItem(ModBlocks.AIR_DUST_CLUSTER, new Item.Settings().group(ModItemGroup.TODUST));
+
+    public static Item EARTH_DUST_BLOCK = new BlockItem(ModBlocks.EARTH_DUST_BLOCK, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item BUDDING_EARTH_DUST = new BlockItem(ModBlocks.BUDDING_EARTH_DUST, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item SMALL_EARTH_DUST_BUD = new BlockItem(ModBlocks.SMALL_EARTH_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item MEDIUM_EARTH_DUST_BUD = new BlockItem(ModBlocks.MEDIUM_EARTH_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item LARGE_EARTH_DUST_BUD = new BlockItem(ModBlocks.LARGE_EARTH_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item EARTH_DUST_CLUSTER = new BlockItem(ModBlocks.EARTH_DUST_CLUSTER, new Item.Settings().group(ModItemGroup.TODUST));
+
+    public static Item WATER_DUST_BLOCK = new BlockItem(ModBlocks.WATER_DUST_BLOCK, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item BUDDING_WATER_DUST = new BlockItem(ModBlocks.BUDDING_WATER_DUST, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item SMALL_WATER_DUST_BUD = new BlockItem(ModBlocks.SMALL_WATER_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item MEDIUM_WATER_DUST_BUD = new BlockItem(ModBlocks.MEDIUM_WATER_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item LARGE_WATER_DUST_BUD = new BlockItem(ModBlocks.LARGE_WATER_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item WATER_DUST_CLUSTER = new BlockItem(ModBlocks.WATER_DUST_CLUSTER, new Item.Settings().group(ModItemGroup.TODUST));
+
+    public static Item LIGHTNING_DUST_BLOCK = new BlockItem(ModBlocks.LIGHTNING_DUST_BLOCK, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item BUDDING_LIGHTNING_DUST = new BlockItem(ModBlocks.BUDDING_LIGHTNING_DUST, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item SMALL_LIGHTNING_DUST_BUD = new BlockItem(ModBlocks.SMALL_LIGHTNING_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item MEDIUM_LIGHTNING_DUST_BUD = new BlockItem(ModBlocks.MEDIUM_LIGHTNING_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item LARGE_LIGHTNING_DUST_BUD = new BlockItem(ModBlocks.LARGE_LIGHTNING_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item LIGHTNING_DUST_CLUSTER = new BlockItem(ModBlocks.LIGHTNING_DUST_CLUSTER, new Item.Settings().group(ModItemGroup.TODUST));
+
+    public static Item GRAVITY_DUST_BLOCK = new BlockItem(ModBlocks.GRAVITY_DUST_BLOCK, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item BUDDING_GRAVITY_DUST = new BlockItem(ModBlocks.BUDDING_GRAVITY_DUST, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item SMALL_GRAVITY_DUST_BUD = new BlockItem(ModBlocks.SMALL_GRAVITY_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item MEDIUM_GRAVITY_DUST_BUD = new BlockItem(ModBlocks.MEDIUM_GRAVITY_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item LARGE_GRAVITY_DUST_BUD = new BlockItem(ModBlocks.LARGE_GRAVITY_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item GRAVITY_DUST_CLUSTER = new BlockItem(ModBlocks.GRAVITY_DUST_CLUSTER, new Item.Settings().group(ModItemGroup.TODUST));
+
     // Raw Ores
     public static final Item RAW_RELIC_IRON = registerItem("raw_relic_iron",
             new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
@@ -199,6 +246,54 @@ public class ModItems {
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(ToDust.MOD_ID, name), item);
+    }
+
+    public static void registerDustItems() {
+        registerBeta("fire_dust_block", FIRE_DUST_BLOCK);
+        registerBeta("budding_fire_dust", BUDDING_FIRE_DUST);
+        registerBeta("small_fire_dust_bud", SMALL_FIRE_DUST_BUD);
+        registerBeta("medium_fire_dust_bud", MEDIUM_FIRE_DUST_BUD);
+        registerBeta("large_fire_dust_bud", LARGE_FIRE_DUST_BUD);
+        registerBeta("fire_dust_cluster", FIRE_DUST_CLUSTER);
+
+        registerBeta("air_dust_block", AIR_DUST_BLOCK);
+        registerBeta("budding_air_dust", BUDDING_AIR_DUST);
+        registerBeta("small_air_dust_bud", SMALL_AIR_DUST_BUD);
+        registerBeta("medium_air_dust_bud", MEDIUM_AIR_DUST_BUD);
+        registerBeta("large_air_dust_bud", LARGE_AIR_DUST_BUD);
+        registerBeta("air_dust_cluster", AIR_DUST_CLUSTER);
+
+        registerBeta("earth_dust_block", EARTH_DUST_BLOCK);
+        registerBeta("budding_earth_dust", BUDDING_EARTH_DUST);
+        registerBeta("small_earth_dust_bud", SMALL_EARTH_DUST_BUD);
+        registerBeta("medium_earth_dust_bud", MEDIUM_EARTH_DUST_BUD);
+        registerBeta("large_earth_dust_bud", LARGE_EARTH_DUST_BUD);
+        registerBeta("earth_dust_cluster", EARTH_DUST_CLUSTER);
+
+        registerBeta("water_dust_block", WATER_DUST_BLOCK);
+        registerBeta("budding_water_dust", BUDDING_WATER_DUST);
+        registerBeta("small_water_dust_bud", SMALL_WATER_DUST_BUD);
+        registerBeta("medium_water_dust_bud", MEDIUM_WATER_DUST_BUD);
+        registerBeta("large_water_dust_bud", LARGE_WATER_DUST_BUD);
+        registerBeta("water_dust_cluster", WATER_DUST_CLUSTER);
+
+        registerBeta("lightning_dust_block", LIGHTNING_DUST_BLOCK);
+        registerBeta("budding_lightning_dust", BUDDING_LIGHTNING_DUST);
+        registerBeta("small_lightning_dust_bud", SMALL_LIGHTNING_DUST_BUD);
+        registerBeta("medium_lightning_dust_bud", MEDIUM_LIGHTNING_DUST_BUD);
+        registerBeta("large_lightning_dust_bud", LARGE_LIGHTNING_DUST_BUD);
+        registerBeta("lightning_dust_cluster", LIGHTNING_DUST_CLUSTER);
+
+        registerBeta("gravity_dust_block", GRAVITY_DUST_BLOCK);
+        registerBeta("budding_gravity_dust", BUDDING_GRAVITY_DUST);
+        registerBeta("small_gravity_dust_bud", SMALL_GRAVITY_DUST_BUD);
+        registerBeta("medium_gravity_dust_bud", MEDIUM_GRAVITY_DUST_BUD);
+        registerBeta("large_gravity_dust_bud", LARGE_GRAVITY_DUST_BUD);
+        registerBeta("gravity_dust_cluster", GRAVITY_DUST_CLUSTER);
+    }
+
+    public static void registerBeta(String name, Item item) {
+        Registry.register(Registry.ITEM, new Identifier(ToDust.MOD_ID, name), item);
     }
 
     public static void registerModItems() {

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "todust:block/large_lightning_dust_bud"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "todust:block/medium_air_dust_bud"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#c:in_overworld",
+    "#c:in_nether"
+  ]
+}

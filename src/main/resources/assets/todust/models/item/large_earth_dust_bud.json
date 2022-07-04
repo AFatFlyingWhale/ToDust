@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "todust:block/large_earth_dust_bud"
+  }
+}

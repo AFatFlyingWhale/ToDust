@@ -3,6 +3,7 @@ package net.afatflyingwhale.todust.world.feature;
 import net.afatflyingwhale.todust.ToDust;
 import net.afatflyingwhale.todust.block.ModBlocks;
 import net.minecraft.block.Blocks;
+import net.minecraft.tag.BlockTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
@@ -180,11 +181,11 @@ public class ModConfiguredFeatures {
     // GEODES
     //------------------
     public static final RegistryEntry<ConfiguredFeature<?, ?>> FIRE_GEODE;
-    //public static final RegistryEntry<ConfiguredFeature<?, ?>> AIR_GEODE;
-    //public static final RegistryEntry<ConfiguredFeature<?, ?>> EARTH_GEODE;
-    //public static final RegistryEntry<ConfiguredFeature<?, ?>> WATER_GEODE;
-    //public static final RegistryEntry<ConfiguredFeature<?, ?>> LIGHTNING_GEODE;
-    //public static final RegistryEntry<ConfiguredFeature<?, ?>> GRAVITY_GEODE;
+    public static final RegistryEntry<ConfiguredFeature<?, ?>> AIR_GEODE;
+    public static final RegistryEntry<ConfiguredFeature<?, ?>> EARTH_GEODE;
+    public static final RegistryEntry<ConfiguredFeature<?, ?>> WATER_GEODE;
+    public static final RegistryEntry<ConfiguredFeature<?, ?>> LIGHTNING_GEODE;
+    public static final RegistryEntry<ConfiguredFeature<?, ?>> GRAVITY_GEODE;
 
     private static RegistryEntry<ConfiguredFeature<?, ?>> register(String id, ConfiguredFeature<?, ?> configuredFeature) {
         return BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ToDust.MOD_ID, id), configuredFeature);
@@ -200,9 +201,122 @@ public class ModConfiguredFeatures {
                                         SimpleBlockStateProvider.of(ModBlocks.BUDDING_FIRE_DUST.getDefaultState()),
                                         SimpleBlockStateProvider.of(Blocks.MAGMA_BLOCK.getDefaultState()),
                                         SimpleBlockStateProvider.of(Blocks.SMOOTH_BASALT.getDefaultState()),
-                                        ModBlocks.BUDDING_FIRE_DUST.getClusterStates()
-                        )
-        )))
+                                        ModBlocks.BUDDING_FIRE_DUST.getClusterStates(),
+                                        BlockTags.FEATURES_CANNOT_REPLACE,
+                                        BlockTags.GEODE_INVALID_BLOCKS),
+                        new GeodeLayerThicknessConfig(1.7D, 2.2D, 3.2D, 4.2D),
+                        new GeodeCrackConfig(0.95D, 2.0D, 2),
+                        0.35D, 0.083D, true,
+                        UniformIntProvider.create(4, 6),
+                        UniformIntProvider.create(3, 4),
+                        UniformIntProvider.create(1, 2),
+                        -16, 16, 0.05D, 1
+        )));
+
+        AIR_GEODE = register("air_geode", new ConfiguredFeature<>(Feature.GEODE, new GeodeFeatureConfig
+                (
+                        new GeodeLayerConfig
+                                (
+                                        SimpleBlockStateProvider.of(Blocks.AIR.getDefaultState()),
+                                        SimpleBlockStateProvider.of(ModBlocks.AIR_DUST_BLOCK.getDefaultState()),
+                                        SimpleBlockStateProvider.of(ModBlocks.BUDDING_AIR_DUST.getDefaultState()),
+                                        SimpleBlockStateProvider.of(Blocks.TERRACOTTA.getDefaultState()),
+                                        SimpleBlockStateProvider.of(Blocks.SMOOTH_SANDSTONE.getDefaultState()),
+                                        ModBlocks.BUDDING_AIR_DUST.getClusterStates(),
+                                        BlockTags.FEATURES_CANNOT_REPLACE,
+                                        BlockTags.GEODE_INVALID_BLOCKS),
+                        new GeodeLayerThicknessConfig(1.7D, 2.2D, 3.2D, 4.2D),
+                        new GeodeCrackConfig(0.95D, 2.0D, 2),
+                        0.35D, 0.083D, true,
+                        UniformIntProvider.create(4, 6),
+                        UniformIntProvider.create(3, 4),
+                        UniformIntProvider.create(1, 2),
+                        -16, 16, 0.05D, 1
+                )));
+
+        EARTH_GEODE = register("earth_geode", new ConfiguredFeature<>(Feature.GEODE, new GeodeFeatureConfig
+                (
+                        new GeodeLayerConfig
+                                (
+                                        SimpleBlockStateProvider.of(Blocks.AIR.getDefaultState()),
+                                        SimpleBlockStateProvider.of(ModBlocks.EARTH_DUST_BLOCK.getDefaultState()),
+                                        SimpleBlockStateProvider.of(ModBlocks.BUDDING_EARTH_DUST.getDefaultState()),
+                                        SimpleBlockStateProvider.of(Blocks.CLAY.getDefaultState()),
+                                        SimpleBlockStateProvider.of(Blocks.MUD.getDefaultState()),
+                                        ModBlocks.BUDDING_EARTH_DUST.getClusterStates(),
+                                        BlockTags.FEATURES_CANNOT_REPLACE,
+                                        BlockTags.GEODE_INVALID_BLOCKS),
+                        new GeodeLayerThicknessConfig(1.7D, 2.2D, 3.2D, 4.2D),
+                        new GeodeCrackConfig(0.95D, 2.0D, 2),
+                        0.35D, 0.083D, true,
+                        UniformIntProvider.create(4, 6),
+                        UniformIntProvider.create(3, 4),
+                        UniformIntProvider.create(1, 2),
+                        -16, 16, 0.05D, 1
+                )));
+
+        WATER_GEODE = register("water_geode", new ConfiguredFeature<>(Feature.GEODE, new GeodeFeatureConfig
+                (
+                        new GeodeLayerConfig
+                                (
+                                        SimpleBlockStateProvider.of(Blocks.AIR.getDefaultState()),
+                                        SimpleBlockStateProvider.of(ModBlocks.WATER_DUST_BLOCK.getDefaultState()),
+                                        SimpleBlockStateProvider.of(ModBlocks.BUDDING_WATER_DUST.getDefaultState()),
+                                        SimpleBlockStateProvider.of(Blocks.BLUE_ICE.getDefaultState()),
+                                        SimpleBlockStateProvider.of(Blocks.PRISMARINE.getDefaultState()),
+                                        ModBlocks.BUDDING_WATER_DUST.getClusterStates(),
+                                        BlockTags.FEATURES_CANNOT_REPLACE,
+                                        BlockTags.GEODE_INVALID_BLOCKS),
+                        new GeodeLayerThicknessConfig(1.7D, 2.2D, 3.2D, 4.2D),
+                        new GeodeCrackConfig(0.95D, 2.0D, 2),
+                        0.35D, 0.083D, true,
+                        UniformIntProvider.create(4, 6),
+                        UniformIntProvider.create(3, 4),
+                        UniformIntProvider.create(1, 2),
+                        -16, 16, 0.05D, 1
+                )));
+
+        LIGHTNING_GEODE = register("lightning_geode", new ConfiguredFeature<>(Feature.GEODE, new GeodeFeatureConfig
+                (
+                        new GeodeLayerConfig
+                                (
+                                        SimpleBlockStateProvider.of(Blocks.AIR.getDefaultState()),
+                                        SimpleBlockStateProvider.of(ModBlocks.LIGHTNING_DUST_BLOCK.getDefaultState()),
+                                        SimpleBlockStateProvider.of(ModBlocks.BUDDING_LIGHTNING_DUST.getDefaultState()),
+                                        SimpleBlockStateProvider.of(Blocks.TUFF.getDefaultState()),
+                                        SimpleBlockStateProvider.of(Blocks.BLACKSTONE.getDefaultState()),
+                                        ModBlocks.BUDDING_LIGHTNING_DUST.getClusterStates(),
+                                        BlockTags.FEATURES_CANNOT_REPLACE,
+                                        BlockTags.GEODE_INVALID_BLOCKS),
+                        new GeodeLayerThicknessConfig(1.7D, 2.2D, 3.2D, 4.2D),
+                        new GeodeCrackConfig(0.95D, 2.0D, 2),
+                        0.35D, 0.083D, true,
+                        UniformIntProvider.create(4, 6),
+                        UniformIntProvider.create(3, 4),
+                        UniformIntProvider.create(1, 2),
+                        -16, 16, 0.05D, 1
+                )));
+
+        GRAVITY_GEODE = register("gravity_geode", new ConfiguredFeature<>(Feature.GEODE, new GeodeFeatureConfig
+                (
+                        new GeodeLayerConfig
+                                (
+                                        SimpleBlockStateProvider.of(Blocks.AIR.getDefaultState()),
+                                        SimpleBlockStateProvider.of(ModBlocks.GRAVITY_DUST_BLOCK.getDefaultState()),
+                                        SimpleBlockStateProvider.of(ModBlocks.BUDDING_GRAVITY_DUST.getDefaultState()),
+                                        SimpleBlockStateProvider.of(Blocks.CALCITE.getDefaultState()),
+                                        SimpleBlockStateProvider.of(Blocks.OBSIDIAN.getDefaultState()),
+                                        ModBlocks.BUDDING_GRAVITY_DUST.getClusterStates(),
+                                        BlockTags.FEATURES_CANNOT_REPLACE,
+                                        BlockTags.GEODE_INVALID_BLOCKS),
+                        new GeodeLayerThicknessConfig(1.7D, 2.2D, 3.2D, 4.2D),
+                        new GeodeCrackConfig(0.95D, 2.0D, 2),
+                        0.35D, 0.083D, true,
+                        UniformIntProvider.create(4, 6),
+                        UniformIntProvider.create(3, 4),
+                        UniformIntProvider.create(1, 2),
+                        -16, 16, 0.05D, 1
+                )));
     }
 
 

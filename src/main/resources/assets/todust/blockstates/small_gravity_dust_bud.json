@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "todust:block/small_gravity_dust_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "todust:block/small_gravity_dust_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "todust:block/small_gravity_dust_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "todust:block/small_gravity_dust_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "todust:block/small_gravity_dust_bud"
+    },
+    "facing=west": {
+      "model": "todust:block/small_gravity_dust_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
