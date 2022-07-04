@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "todust:lightning_dust_block",
+    "todust:budding_lightning_dust",
+    "todust:lightning_dust_cluster",
+    "todust:large_lightning_dust_bud",
+    "todust:medium_lightning_dust_bud",
+    "todust:small_lightning_dust_bud"
+  ]
+}

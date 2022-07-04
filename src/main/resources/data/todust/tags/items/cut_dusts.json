@@ -1,0 +1,10 @@
+{
+  "values": [
+    "todust:cut_fire_dust",
+    "todust:cut_air_dust",
+    "todust:cut_earth_dust",
+    "todust:cut_water_dust",
+    "todust:cut_lightning_dust",
+    "todust:cut_gravity_dust"
+  ]
+}

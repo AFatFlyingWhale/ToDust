@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "todust:deepslate_relic_iron_ore",
+    "todust:deepslate_relic_gold_ore",
+    "todust:deepslate_mithril_ore",
+    "todust:deepslate_orichalcite_ore",
+    "todust:deepslate_adamantite_ore"
+  ]
+}

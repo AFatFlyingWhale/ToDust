@@ -7,11 +7,31 @@
   "item.todust.lightning_dust_crystal": "Lightning Dust Crystal",
   "item.todust.gravity_dust_crystal": "Gravity Dust Crystal",
 
+  "item.todust.fire_dust_powder": "Fire Dust Powder",
+  "item.todust.air_dust_powder": "Air Dust Powder",
+  "item.todust.earth_dust_powder": "Earth Dust Powder",
+  "item.todust.water_dust_powder": "Water Dust Powder",
+  "item.todust.lightning_dust_powder": "Lightning Dust Powder",
+  "item.todust.gravity_dust_powder": "Gravity Dust Powder",
+
+  "item.todust.cut_fire_dust": "Cut Fire Dust",
+  "item.todust.cut_air_dust": "Cut Air Dust",
+  "item.todust.cut_earth_dust": "Cut Earth Dust",
+  "item.todust.cut_water_dust": "Cut Water Dust",
+  "item.todust.cut_lightning_dust": "Cut Lightning Dust",
+  "item.todust.cut_gravity_dust": "Cut Gravity Dust",
+
   "item.todust.relic_iron_ingot": "Relic Iron Ingot",
   "item.todust.relic_gold_ingot": "Relic Gold Ingot",
   "item.todust.mithril_ingot": "Mithril Ingot",
   "item.todust.orichalcum_ingot": "Orichalcum Ingot",
   "item.todust.adamantine_ingot": "Adamantine Ingot",
+
+  "item.todust.relic_iron_nugget": "Relic Iron Nugget",
+  "item.todust.relic_gold_nugget": "Relic Gold Nugget",
+  "item.todust.mithril_nugget": "Mithril Nugget",
+  "item.todust.orichalcum_nugget": "Orichalcum Nugget",
+  "item.todust.adamantine_nugget": "Adamantine Nugget",
 
   "item.todust.raw_relic_iron": "Raw Relic Iron",
   "item.todust.raw_relic_gold": "Raw Relic Gold",
@@ -19,7 +39,44 @@
   "item.todust.raw_orichalcite": "Raw Orichalcite",
   "item.todust.raw_adamantite": "Raw Adamantite",
 
+  "item.todust.mithril_axe": "Mithril Axe",
+  "item.todust.mithril_shovel": "Mithril Shovel",
+  "item.todust.mithril_hoe": "Mithril Hoe",
+  "item.todust.mithril_sword": "Mithril Sword",
+  "item.todust.mithril_pickaxe": "Mithril Pickaxe",
 
+  "item.todust.mithril_helmet": "Mithril Helmet",
+  "item.todust.mithril_chestplate": "Mithril Chestplate",
+  "item.todust.mithril_leggings": "Mithril Leggings",
+  "item.todust.mithril_boots": "Mithril Boots",
+
+  "item.todust.orichalcum_axe": "Orichalcum Axe",
+  "item.todust.orichalcum_shovel": "Orichalcum Shovel",
+  "item.todust.orichalcum_hoe": "Orichalcum Hoe",
+  "item.todust.orichalcum_sword": "Orichalcum Sword",
+  "item.todust.orichalcum_pickaxe": "Orichalcum Pickaxe",
+
+  "item.todust.orichalcum_helmet": "Orichalcum Helmet",
+  "item.todust.orichalcum_chestplate": "Orichalcum Chestplate",
+  "item.todust.orichalcum_leggings": "Orichalcum Leggings",
+  "item.todust.orichalcum_boots": "Orichalcum Boots",
+
+  "item.todust.adamantine_axe": "Adamantine Axe",
+  "item.todust.adamantine_shovel": "Adamantine Shovel",
+  "item.todust.adamantine_hoe": "Adamantine Hoe",
+  "item.todust.adamantine_sword": "Adamantine Sword",
+  "item.todust.adamantine_pickaxe": "Adamantine Pickaxe",
+
+  "item.todust.adamantine_helmet": "Adamantine Helmet",
+  "item.todust.adamantine_chestplate": "Adamantine Chestplate",
+  "item.todust.adamantine_leggings": "Adamantine Leggings",
+  "item.todust.adamantine_boots": "Adamantine Boots",
+
+  "item.todust.pyrecoal": "Pyrecoal",
+
+  "item.todust.mithril_core": "Mithril Armor Core",
+  "item.todust.orichalcum_core": "Orichalcum Armor Core",
+  "item.todust.adamantine_core": "Adamantine Armor Core",
 
   "block.todust.relic_iron_block": "Block of Relic Iron",
   "block.todust.relic_iron_ore": "Relic Iron Ore",

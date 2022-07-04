@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TST",
+    "SMS",
+    "TST"
+  ],
+  "key": {
+    "M": {
+      "item": "todust:orichalcum_block"
+    },
+    "S": {
+      "item": "todust:relic_iron_ingot"
+    },
+    "T": {
+      "tag": "todust:dust_powders"
+    }
+  },
+  "result": {
+    "item": "todust:orichalcum_core"
+  }
+}

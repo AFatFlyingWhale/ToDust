@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MSM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "todust:orichalcum_ingot"
+    },
+    "S": {
+      "item": "todust:orichalcum_core"
+    }
+  },
+  "result": {
+    "item": "todust:orichalcum_chestplate"
+  }
+}

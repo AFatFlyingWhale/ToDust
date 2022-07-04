@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "MSM"
+  ],
+  "key": {
+    "M": {
+      "item": "todust:mithril_ingot"
+    },
+    "S": {
+      "item": "todust:mithril_core"
+    }
+  },
+  "result": {
+    "item": "todust:mithril_helmet"
+  }
+}

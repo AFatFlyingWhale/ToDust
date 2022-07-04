@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "todust:gravity_dust_block",
+    "todust:budding_gravity_dust",
+    "todust:gravity_dust_cluster",
+    "todust:large_gravity_dust_bud",
+    "todust:medium_gravity_dust_bud",
+    "todust:small_gravity_dust_bud"
+  ]
+}

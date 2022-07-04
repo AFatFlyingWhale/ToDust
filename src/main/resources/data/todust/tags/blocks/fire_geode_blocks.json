@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "todust:fire_dust_block",
+    "todust:budding_fire_dust",
+    "todust:fire_dust_cluster",
+    "todust:large_fire_dust_bud",
+    "todust:medium_fire_dust_bud",
+    "todust:small_fire_dust_bud"
+  ]
+}

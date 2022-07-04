@@ -22,27 +22,27 @@ public class ModPlacedFeatures {
     // Twisted Oak
     public static final RegistryEntry<PlacedFeature> TWISTED_OAK_PLACED = PlacedFeatures.register("twisted_oak_placed",
             ModConfiguredFeatures.TWISTED_OAK_SPAWN, VegetationPlacedFeatures.modifiers(
-                    PlacedFeatures.createCountExtraModifier(0,0.015f,1)));
+                    PlacedFeatures.createCountExtraModifier(0,0.01f,1)));
     // Magebane
     public static final RegistryEntry<PlacedFeature> MAGEBANE_PLACED = PlacedFeatures.register("magebane_placed",
             ModConfiguredFeatures.MAGEBANE_SPAWN, VegetationPlacedFeatures.modifiers(
-                    PlacedFeatures.createCountExtraModifier(0,0.015f,1)));
+                    PlacedFeatures.createCountExtraModifier(0,0.01f,1)));
     // Pyrewood
     public static final RegistryEntry<PlacedFeature> PYREWOOD_PLACED = PlacedFeatures.register("pyrewood_placed",
             ModConfiguredFeatures.PYREWOOD_SPAWN, VegetationPlacedFeatures.modifiers(
-                    PlacedFeatures.createCountExtraModifier(0,0.015f,1)));
+                    PlacedFeatures.createCountExtraModifier(0,0.01f,1)));
     // Wisewillow
     public static final RegistryEntry<PlacedFeature> WISEWILLOW_PLACED = PlacedFeatures.register("wisewillow_placed",
             ModConfiguredFeatures.WISEWILLOW_SPAWN, VegetationPlacedFeatures.modifiers(
-                    PlacedFeatures.createCountExtraModifier(0,0.015f,1)));
+                    PlacedFeatures.createCountExtraModifier(0,0.01f,1)));
     // Black Birch
     public static final RegistryEntry<PlacedFeature> BLACK_BIRCH_PLACED = PlacedFeatures.register("black_birch_placed",
             ModConfiguredFeatures.BLACK_BIRCH_SPAWN, VegetationPlacedFeatures.modifiers(
-                    PlacedFeatures.createCountExtraModifier(0,0.015f,1)));
+                    PlacedFeatures.createCountExtraModifier(0,0.01f,1)));
     // Red Heartnut
     public static final RegistryEntry<PlacedFeature> RED_HEARTNUT_PLACED = PlacedFeatures.register("red_heartnut_placed",
             ModConfiguredFeatures.RED_HEARTNUT_SPAWN, VegetationPlacedFeatures.modifiers(
-                    PlacedFeatures.createCountExtraModifier(0,0.015f,1)));
+                    PlacedFeatures.createCountExtraModifier(0,0.01f,1)));
     //---------------------
     // Ores
     //---------------------

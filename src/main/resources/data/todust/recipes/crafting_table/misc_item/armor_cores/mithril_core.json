@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TST",
+    "SMS",
+    "TST"
+  ],
+  "key": {
+    "M": {
+      "item": "todust:mithril_block"
+    },
+    "S": {
+      "item": "todust:relic_iron_ingot"
+    },
+    "T": {
+      "tag": "todust:dust_powders"
+    }
+  },
+  "result": {
+    "item": "todust:mithril_core"
+  }
+}

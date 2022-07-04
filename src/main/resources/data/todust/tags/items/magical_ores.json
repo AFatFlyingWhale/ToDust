@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "todust:raw_relic_iron",
+    "todust:raw_relic_gold",
+    "todust:raw_mithril",
+    "todust:raw_orichalcite",
+    "todust:raw_adamantite"
+  ]
+}

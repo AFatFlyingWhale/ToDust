@@ -19,8 +19,8 @@ public class ModRegistries {
         ToDust.LOGGER.info("Registering Fuels for " + ToDust.MOD_ID);
         FuelRegistry registry = FuelRegistry.INSTANCE;
 
-        registry.add(ModItems.FIRE_DUST_CRYSTAL, 3200);
-        registry.add(ModBlocks.FIRE_DUST_BLOCK, 12800);
+        registry.add(ModItems.FIRE_DUST_CRYSTAL, 400);
+        registry.add(ModBlocks.FIRE_DUST_BLOCK, 1600);
         // Twisted Oak
         registry.add(ModBlocks.TWISTED_OAK_SAPLING, 100);
         registry.add(ModBlocks.TWISTED_OAK_LEAVES, 100);
@@ -69,6 +69,9 @@ public class ModRegistries {
         registry.add(ModBlocks.RED_HEARTNUT_WOOD, 300);
         registry.add(ModBlocks.STRIPPED_RED_HEARTNUT_LOG, 300);
         registry.add(ModBlocks.STRIPPED_RED_HEARTNUT_WOOD, 300);
+
+        // Pyrecoal
+        registry.add(ModItems.PYRECOAL, 2400);
 
     }
 

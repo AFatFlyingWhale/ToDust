@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "todust:air_dust_block",
+    "todust:budding_air_dust",
+    "todust:air_dust_cluster",
+    "todust:large_air_dust_bud",
+    "todust:medium_air_dust_bud",
+    "todust:small_air_dust_bud"
+  ]
+}

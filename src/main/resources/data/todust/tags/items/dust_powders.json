@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "todust:fire_dust_powder",
+    "todust:air_dust_powder",
+    "todust:earth_dust_powder",
+    "todust:water_dust_powder",
+    "todust:lightning_dust_powder",
+    "todust:gravity_dust_powder"
+  ]
+}

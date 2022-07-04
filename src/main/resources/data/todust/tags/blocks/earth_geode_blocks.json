@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "todust:earth_dust_block",
+    "todust:budding_earth_dust",
+    "todust:earth_dust_cluster",
+    "todust:large_earth_dust_bud",
+    "todust:medium_earth_dust_bud",
+    "todust:small_earth_dust_bud"
+  ]
+}

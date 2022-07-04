@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MSM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "todust:adamantine_ingot"
+    },
+    "S": {
+      "item": "todust:adamantine_core"
+    }
+  },
+  "result": {
+    "item": "todust:adamantine_chestplate"
+  }
+}

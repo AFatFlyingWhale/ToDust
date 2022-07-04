@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "todust:relic_iron_ingot",
+    "todust:relic_gold_ingot",
+    "todust:mithril_ingot",
+    "todust:orichalcum_ingot",
+    "todust:adamantine_ingot"
+  ]
+}

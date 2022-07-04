@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "todust:air_dust_block",
+    "todust:budding_air_dust",
+    "todust:earth_dust_block",
+    "todust:budding_earth_dust",
+    "todust:water_dust_block",
+    "todust:budding_water_dust",
+    "todust:lightning_dust_block",
+    "todust:budding_lightning_dust",
+    "todust:gravity_dust_block",
+    "todust:budding_gravity_dust"
+  ]
+}

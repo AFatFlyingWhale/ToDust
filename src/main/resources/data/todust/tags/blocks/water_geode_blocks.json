@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "todust:water_dust_block",
+    "todust:budding_water_dust",
+    "todust:water_dust_cluster",
+    "todust:large_water_dust_bud",
+    "todust:medium_water_dust_bud",
+    "todust:small_water_dust_bud"
+  ]
+}

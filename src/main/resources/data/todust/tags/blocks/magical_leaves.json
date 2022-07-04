@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "todust:twisted_oak_leaves",
+    "todust:magebane_leaves",
+    "todust:pyrewood_leaves",
+    "todust:wisewillow_leaves",
+    "todust:black_birch_leaves",
+    "todust:red_heartnut_leaves"
+  ]
+}
