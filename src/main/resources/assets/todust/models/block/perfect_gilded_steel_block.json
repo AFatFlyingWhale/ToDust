@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "todust:block/perfect_gilded_steel_block"
+  }
+}

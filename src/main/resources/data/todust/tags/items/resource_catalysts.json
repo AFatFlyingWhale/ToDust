@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "todust:coal_catalyst",
+    "todust:iron_catalyst",
+    "todust:gold_catalyst",
+    "todust:copper_catalyst",
+    "todust:diamond_catalyst",
+    "todust:emerald_catalyst",
+    "todust:redstone_catalyst",
+    "todust:lapis_catalyst",
+    "todust:netherite_catalyst",
+    "todust:relic_iron_catalyst",
+    "todust:relic_gold_catalyst",
+    "todust:mithril_catalyst",
+    "todust:orichalcum_catalyst",
+    "todust:adamantine_catalyst",
+    "todust:gilded_steel_catalyst",
+    "todust:malichor_catalyst",
+    "todust:quartz_catalyst",
+    "todust:glowstone_catalyst"
+  ]
+}

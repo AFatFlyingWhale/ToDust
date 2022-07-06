@@ -30,7 +30,7 @@ public class ModBlocks {
     public static final Block ADAMANTINE_BLOCK = registerBlock("adamantine_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
 
-    // Ore Blocks
+    // Raw Ore Blocks
     public static final Block RAW_RELIC_IRON_BLOCK = registerBlock("raw_relic_iron_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
     public static final Block RAW_RELIC_GOLD_BLOCK = registerBlock("raw_relic_gold_block",
@@ -236,7 +236,33 @@ public class ModBlocks {
             new SaplingBlock(new RedHeartnutSaplingGenerator(),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.TODUST);
 
+    // MISC BLOCKS
+    public static final Block PYRECOAL_BLOCK = registerBlock("pyrecoal_block",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block GILDED_STEEL_BLOCK = registerBlock("gilded_steel_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block MALICHOR_BLOCK = registerBlock("malichor_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
 
+    // PERFECT BLOCKS
+    public static final Block PERFECT_COAL_BLOCK = registerBlock("perfect_coal_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_IRON_BLOCK = registerBlock("perfect_iron_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_GOLD_BLOCK = registerBlock("perfect_gold_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_COPPER_BLOCK = registerBlock("perfect_copper_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_DIAMOND_BLOCK = registerBlock("perfect_diamond_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_EMERALD_BLOCK = registerBlock("perfect_emerald_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_REDSTONE_BLOCK = registerBlock("perfect_redstone_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_LAPIS_BLOCK = registerBlock("perfect_lapis_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_NETHERITE_BLOCK = registerBlock("perfect_netherite_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_RELIC_IRON_BLOCK = registerBlock("perfect_relic_iron_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_RELIC_GOLD_BLOCK = registerBlock("perfect_relic_gold_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_MITHRIL_BLOCK = registerBlock("perfect_mithril_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_ORICHALCUM_BLOCK = registerBlock("perfect_orichalcum_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_ADAMANTINE_BLOCK = registerBlock("perfect_adamantine_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_GILDED_STEEL_BLOCK = registerBlock("perfect_gilded_steel_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_MALICHOR_BLOCK = registerBlock("perfect_malichor_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_QUARTZ_BLOCK = registerBlock("perfect_quartz_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_GLOWSTONE_BLOCK = registerBlock("perfect_glowstone_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
 
 // REGISTRY CODE
     public static void registerDustBlocks() {

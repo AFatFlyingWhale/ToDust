@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BCB",
+    "CAC",
+    "BCB"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:relic_iron_ingot"
+    },
+    "B": {
+      "item": "minecraft:obsidian"
+    },
+    "C": {
+      "tag": "todust:cut_dusts"
+    }
+  },
+  "result": {
+    "item": "todust:reinforcing_plate"
+  }
+}

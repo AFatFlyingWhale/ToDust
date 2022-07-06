@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AD",
+    "BC"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:pyrecoal_dust"
+    },
+    "B": {
+      "item": "todust:relic_iron_dust"
+    },
+    "C": {
+      "item": "todust:relic_gold_dust"
+    },
+    "D": {
+      "tag": "todust:dust_powders"
+    }
+  },
+  "result": {
+    "item": "todust:gilded_steel_blend"
+  }
+}

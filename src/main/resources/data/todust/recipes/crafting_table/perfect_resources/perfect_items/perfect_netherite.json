@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CAC",
+    "ABA",
+    "CAC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:netherite_block"
+    },
+    "B": {
+      "item": "todust:catalyst_binder"
+    },
+    "C": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "item": "todust:perfect_netherite"
+  }
+}

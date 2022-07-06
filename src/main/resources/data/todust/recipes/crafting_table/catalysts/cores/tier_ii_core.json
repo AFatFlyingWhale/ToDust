@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CDC",
+    "BAB",
+    "CDC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:diamond_block"
+    },
+    "B": {
+      "item": "todust:tier_i_core"
+    },
+    "C": {
+      "item": "todust:gilded_steel_block"
+    },
+    "D": {
+      "tag": "todust:perfect_resources"
+    }
+  },
+  "result": {
+    "item": "todust:tier_ii_core"
+  }
+}

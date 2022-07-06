@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+    "item": "todust:warden_heart"
+  },
+  "result": "minecraft:echo_shard"
+}

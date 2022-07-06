@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "todust:fire_dust_crystal"
+  },
+  "result": "todust:cut_fire_dust"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:perfect_relic_iron"
+    },
+    "B": {
+      "item": "todust:catalyst_binder"
+    }
+  },
+  "result": {
+    "item": "todust:perfect_relic_iron_block"
+  }
+}

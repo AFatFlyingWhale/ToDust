@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "todust:gravity_dust_crystal"
+  },
+  "result": "todust:gravity_dust_powder"
+}

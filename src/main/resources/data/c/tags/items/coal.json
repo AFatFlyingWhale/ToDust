@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "todust:pyrecoal",
+    "minecraft:charcoal",
+    "minecraft:coal"
+  ]
+}

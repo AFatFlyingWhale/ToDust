@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABB",
+    "BBC"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:drop_of_malichor"
+    },
+    "B": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "C": {
+      "item": "todust:relic_gold_ingot"
+    }
+  },
+  "result": {
+    "item": "todust:malichor_ingot"
+  }
+}

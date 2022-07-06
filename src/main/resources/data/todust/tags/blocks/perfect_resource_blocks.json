@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "todust:perfect_coal_block",
+    "todust:perfect_iron_block",
+    "todust:perfect_gold_block",
+    "todust:perfect_copper_block",
+    "todust:perfect_diamond_block",
+    "todust:perfect_emerald_block",
+    "todust:perfect_redstone_block",
+    "todust:perfect_lapis_block",
+    "todust:perfect_netherite_block",
+    "todust:perfect_relic_iron_block",
+    "todust:perfect_relic_gold_block",
+    "todust:perfect_mithril_block",
+    "todust:perfect_orichalcum_block",
+    "todust:perfect_adamantine_block",
+    "todust:perfect_gilded_steel_block",
+    "todust:perfect_malichor_block",
+    "todust:perfect_quartz_block",
+    "todust:perfect_glowstone_block"
+  ]
+}

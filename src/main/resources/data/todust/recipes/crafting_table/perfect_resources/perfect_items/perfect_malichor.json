@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CAC",
+    "ABA",
+    "CAC"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:malichor_block"
+    },
+    "B": {
+      "item": "todust:catalyst_binder"
+    },
+    "C": {
+      "item": "todust:drop_of_malichor"
+    }
+  },
+  "result": {
+    "item": "todust:perfect_malichor"
+  }
+}

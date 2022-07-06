@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CBC",
+    "BAB",
+    "CBC"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:water_dust_block"
+    },
+    "B": {
+      "item": "minecraft:turtle_egg"
+    },
+    "C": {
+      "item": "minecraft:nautilus_shell"
+    }
+  },
+  "result": {
+    "item": "minecraft:heart_of_the_sea"
+  }
+}

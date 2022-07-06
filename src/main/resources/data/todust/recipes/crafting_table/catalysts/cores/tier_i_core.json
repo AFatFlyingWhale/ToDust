@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "BDB",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "tag": "todust:dust_powders"
+    },
+    "B": {
+      "item": "todust:gilded_steel_ingot"
+    },
+    "C": {
+      "tag": "todust:mythical_ingots"
+    },
+    "D": {
+      "item": "todust:pyrecoal_block"
+    }
+  },
+  "result": {
+    "item": "todust:tier_i_core"
+  }
+}

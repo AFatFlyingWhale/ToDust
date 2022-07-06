@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "todust:pyrecoal"
+    }
+  ],
+  "result": {
+    "count": 12,
+    "item": "todust:tiny_pyrecoal"
+  }
+}

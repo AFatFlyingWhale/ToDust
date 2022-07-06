@@ -5,6 +5,8 @@
     "#todust:deepslate_ores",
     "#todust:stone_ores",
     "#todust:nether_ores",
-    "#todust:metal_blocks"
+    "#todust:metal_blocks",
+    "todust:pyrecoal_block",
+    "todust:gilded_steel_block"
   ]
 }

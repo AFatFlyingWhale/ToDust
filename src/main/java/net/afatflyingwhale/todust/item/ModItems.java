@@ -2,9 +2,19 @@ package net.afatflyingwhale.todust.item;
 
 import net.afatflyingwhale.todust.ToDust;
 import net.afatflyingwhale.todust.block.ModBlocks;
-import net.afatflyingwhale.todust.item.custom.*;
+import net.afatflyingwhale.todust.item.custom.catalysts.catalyst_cores.ModCatalystCore1Item;
+import net.afatflyingwhale.todust.item.custom.catalysts.catalyst_cores.ModCatalystCore2Item;
+import net.afatflyingwhale.todust.item.custom.catalysts.catalyst_cores.ModCatalystCore3Item;
+import net.afatflyingwhale.todust.item.custom.catalysts.catalyst_cores.ModCatalystCore4Item;
+import net.afatflyingwhale.todust.item.custom.catalysts.resource_catalysts.*;
+import net.afatflyingwhale.todust.item.custom.perfects.PerfectItem;
+import net.afatflyingwhale.todust.item.custom.tooltypes.ModAxeItem;
+import net.afatflyingwhale.todust.item.custom.tooltypes.ModHoeItem;
+import net.afatflyingwhale.todust.item.custom.tooltypes.ModPickaxeItem;
+import net.afatflyingwhale.todust.item.custom.tooltypes.sword_effect_types.ModHungerSwordItem;
+import net.afatflyingwhale.todust.item.custom.tooltypes.sword_effect_types.ModSlownessSwordItem;
+import net.afatflyingwhale.todust.item.custom.tooltypes.sword_effect_types.ModWeaknessSwordItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.block.Block;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -166,28 +176,49 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.ADAMANTINE, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.TODUST)));
 
     // Misc Materials
+        // Small Coals
+    public static final Item TINY_COAL = registerItem("tiny_coal", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item TINY_CHARCOAL = registerItem("tiny_charcoal", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
         // Pyrecoal
-    public static final Item PYRECOAL = registerItem("pyrecoal",
-            new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
-        // Armor Cores
+    public static final Item PYRECOAL = registerItem("pyrecoal", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item TINY_PYRECOAL = registerItem("tiny_pyrecoal", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    // Mob Drops
+        // Warden Heart
+    public static final Item WARDEN_HEART = registerItem("warden_heart", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    // Armor Cores
     public static final Item MITHRIL_CORE = registerItem("mithril_core",
                 new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item ORICHALCUM_CORE = registerItem("orichalcum_core",
             new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item ADAMANTINE_CORE = registerItem("adamantine_core",
             new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
-        // Drop of Malichor
+        // Malichor
+    public static final Item DROP_OF_MALICHOR = registerItem("drop_of_malichor", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item MALICHOR_INGOT = registerItem("malichor_ingot", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
         // Alchemic Amber
         // Ender Pearl Dust
+    public static final Item ENDER_PEARL_POWDER = registerItem("ender_pearl_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+        // Gilded Steel
+    public static final Item GILDED_STEEL_BLEND = registerItem("gilded_steel_blend", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item GILDED_STEEL_INGOT = registerItem("gilded_steel_ingot", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+        // Misc Dusts
+    public static final Item PYRECOAL_DUST = registerItem("pyrecoal_dust", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item RELIC_IRON_DUST = registerItem("relic_iron_dust", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item RELIC_GOLD_DUST = registerItem("relic_gold_dust", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
         // Reinforcing Plate
-        // Dust Powders
+    public static final Item REINFORCING_PLATE = registerItem("reinforcing_plate", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+        // Nephilim Dust???
+
+    // Dust Powders
     public static final Item FIRE_DUST_POWDER = registerItem("fire_dust_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item AIR_DUST_POWDER = registerItem("air_dust_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item EARTH_DUST_POWDER = registerItem("earth_dust_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item WATER_DUST_POWDER = registerItem("water_dust_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item LIGHTNING_DUST_POWDER = registerItem("lightning_dust_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item GRAVITY_DUST_POWDER = registerItem("gravity_dust_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
-        // Cut Dust Crystals
+    // Cut Dust Crystals
     public static final Item CUT_FIRE_DUST = registerItem("cut_fire_dust", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item CUT_AIR_DUST = registerItem("cut_air_dust", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item CUT_EARTH_DUST = registerItem("cut_earth_dust", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
@@ -195,47 +226,95 @@ public class ModItems {
     public static final Item CUT_LIGHTNING_DUST = registerItem("cut_lightning_dust", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item CUT_GRAVITY_DUST = registerItem("cut_gravity_dust", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
 
-    // Catalysts
+    // Catalysts Components
         // Catalyst Binder
-    // Catalyst Cores
-        // Tier I Core - "#todust:dust_crystal, relic_iron_ingot, #todust:dust_crystal", "relic_gold_ingot, pyrecoal_block, relic_gold_ingot", "#todust:dust_crystal, relic_iron_ingot, #todust:dust_crystal"
-        // Tier II Core - "x, x, x", "x, x, x", "x, x, x"
-        // Tier III Core - "x, drop_of_malichor, x", "x, netherite_block, x", "x, drop_of_malichor, x"
-        // Tier IV Core - "x, x, x", "x, x, x", "x, x, x"
+    public static final Item CATALYST_BINDER = registerItem("catalyst_binder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
 
-    // Resource Catalysts
-        // Coal Catalyst - "You could smelt a lot with this"
-        // Iron Catalyst - "Makes the world go square"
-        // Gold Catalyst - "Beware sneaky piglins"
-        // Copper Catalyst - "Definitely a new material!"
-        // Diamond Catalyst - "Every kid's dream"
-        // Emerald Catalyst - "Condensed labour"
-        // Redstone Catalyst - "Blink and it'll invent teleportation"
-        // Lapis Catalyst - "If you squint it looks REALLY blue"
-        // Netherite Catalyst - "This is overkill"
-        // Relic Iron Catalyst - "Old metal from beneath, like all metal, actually"
-        // Relic Gold Catalyst - "It's like gold, but older!"
-        // Mithril Catalyst - "The entire wealth of Moria"
-        // Orichalcum Catalyst - "It green! It hit good!"
-        // Adamantine Catalyst - "Unbreakable, even on a bad day"
-    // Dust Catalysts
+    // Catalyst Cores
+    public static final Item TIER_I_CORE = registerItem("tier_i_core", new ModCatalystCore1Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item TIER_II_CORE = registerItem("tier_ii_core", new ModCatalystCore2Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item TIER_III_CORE = registerItem("tier_iii_core", new ModCatalystCore3Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item TIER_IV_CORE = registerItem("tier_iv_core", new ModCatalystCore4Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+
+    // Resource Catalysts & Perfects
+    public static final Item COAL_CATALYST = registerItem("coal_catalyst", new CoalCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_COAL = registerItem("perfect_coal", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item IRON_CATALYST = registerItem("iron_catalyst", new IronCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_IRON = registerItem("perfect_iron", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item GOLD_CATALYST = registerItem("gold_catalyst", new GoldCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_GOLD = registerItem("perfect_gold", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item COPPER_CATALYST = registerItem("copper_catalyst", new CopperCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_COPPER = registerItem("perfect_copper", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item DIAMOND_CATALYST = registerItem("diamond_catalyst", new DiamondCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_DIAMOND = registerItem("perfect_diamond", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item EMERALD_CATALYST = registerItem("emerald_catalyst", new EmeraldCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_EMERALD = registerItem("perfect_emerald", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item REDSTONE_CATALYST = registerItem("redstone_catalyst", new RedstoneCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_REDSTONE = registerItem("perfect_redstone", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item LAPIS_CATALYST = registerItem("lapis_catalyst", new LapisCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_LAPIS = registerItem("perfect_lapis", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item NETHERITE_CATALYST = registerItem("netherite_catalyst", new NetheriteCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_NETHERITE = registerItem("perfect_netherite", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item RELIC_IRON_CATALYST = registerItem("relic_iron_catalyst", new RelicIronCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_RELIC_IRON = registerItem("perfect_relic_iron", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item RELIC_GOLD_CATALYST = registerItem("relic_gold_catalyst", new RelicGoldCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_RELIC_GOLD = registerItem("perfect_relic_gold", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item MITHRIL_CATALYST = registerItem("mithril_catalyst", new MithrilCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_MITHRIL = registerItem("perfect_mithril", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item ORICHALCUM_CATALYST = registerItem("orichalcum_catalyst", new OrichalcumCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_ORICHALCUM = registerItem("perfect_orichalcum", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item ADAMANTINE_CATALYST = registerItem("adamantine_catalyst", new AdamantineCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_ADAMANTINE = registerItem("perfect_adamantine", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item GILDED_STEEL_CATALYST = registerItem("gilded_steel_catalyst", new GildedSteelCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_GILDED_STEEL = registerItem("perfect_gilded_steel", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item MALICHOR_CATALYST = registerItem("malichor_catalyst", new MalichorCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_MALICHOR = registerItem("perfect_malichor", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item QUARTZ_CATALYST = registerItem("quartz_catalyst", new QuartzCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_QUARTZ = registerItem("perfect_quartz", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item GLOWSTONE_CATALYST = registerItem("glowstone_catalyst", new GlowstoneCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item PERFECT_GLOWSTONE = registerItem("perfect_glowstone", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    // Dust Catalysts & Perfects
         // Fire Dust Catalyst - "Oof, ow, hot, hot!"
         // Air Dust Catalyst - "Feels like I'm holding nothing at all!"
-        // Earth Dust Catalyst - "Heavy, fragile and sharp, the best combination"
+        // Earth Dust Catalyst - "Heavy, fragile and sharp"
         // Water Dust Catalyst - "DO NOT DRINK"
-        // Lightning Dust Catalyst - "Portable generator on a very large budget"
-        // Gravity Dust Catalyst - "It's like a black hole, only portable"
+        // Lightning Dust Catalyst - "Pocket thunderstorm"
+        // Gravity Dust Catalyst - "The portable hole!"
     // Material Catalysts
         // Stone Catalyst - "From the deep"
         // Deepslate Catalyst - "From the deeper"
         // Netherrack Catalyst - "From the deepest"
-        // Blackstone Catalyst - "It has sprinkles!"
+        // Blackstone Catalyst - "Not politically correct"
         // Basalt Catalyst - "Igneous? No, ig-nice-s"
         // Calcite Catalyst - "Poor man's marble"
         // Andesite Catalyst - "Rich man's stone"
-        // Granite Catalyst - "The color of foolish choices"
-        // Diorite Catalyst - "This is just birdcrap"
-        // Dirt Catalyst - "Life giveth, life taketh away-eth"
+        // Granite Catalyst - "Taking things for granite"
+        // Diorite Catalyst - "Bird Crapalyst"
+        // Dirt Catalyst - "You've got a jar of dirt!"
+        // Sand Catalyst - "Pocket sand!"
+        // Gravel Catalyst - "Fancy pebbles"
+    // Misc Catalysts
+        // Artistic Catalyst
+        // Musical Catalyst
     // Wood Catalysts
             // Tier I
         // Oak Catalyst - "Begin anew"
@@ -262,8 +341,8 @@ public class ModItems {
         // Sheep - "Counting makes me tired"
         // Chicken - "Good protein?"
         // Rabbit - "The most foul, cruel, and bad-tempered rodent you ever set eyes on"
-        // Cod - "Fishy"
-        // Bee - "It's not Forestry!!!"
+        // Fish - "Something's fishy"
+        // Bee - "It's not Forestry!"
         // Goat - "2014 called"
             // Mob Catalyst Core I
             // Tier II

@@ -72,6 +72,11 @@ public class ModRegistries {
 
         // Pyrecoal
         registry.add(ModItems.PYRECOAL, 2400);
+        registry.add(ModBlocks.PYRECOAL_BLOCK, 24000);
+        registry.add(ModItems.TINY_PYRECOAL, 200);
+        // Tiny Coals
+        registry.add(ModItems.TINY_COAL, 200);
+        registry.add(ModItems.TINY_CHARCOAL, 200);
 
     }
 

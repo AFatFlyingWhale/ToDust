@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DCD",
+    "ABA",
+    "DCD"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:tier_iii_core"
+    },
+    "B": {
+      "item": "todust:malichor_block"
+    },
+    "C": {
+      "item": "todust:warden_heart"
+    },
+    "D": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "todust:tier_iv_core"
+  }
+}

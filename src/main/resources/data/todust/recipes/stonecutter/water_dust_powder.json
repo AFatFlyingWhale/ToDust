@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "todust:water_dust_crystal"
+  },
+  "result": "todust:water_dust_powder"
+}

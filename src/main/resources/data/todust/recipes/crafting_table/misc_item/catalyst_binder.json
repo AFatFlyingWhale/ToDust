@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "todust:pyrecoal_dust"
+    },
+    {
+      "tag": "todust:dust_powders"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "todust:catalyst_binder"
+  }
+}

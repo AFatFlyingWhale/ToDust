@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "todust:fire_dust_block",
+    "todust:air_dust_block",
+    "todust:earth_dust_block",
+    "todust:water_dust_block",
+    "todust:lightning_dust_block",
+    "todust:gravity_dust_block"
+  ]
+}
