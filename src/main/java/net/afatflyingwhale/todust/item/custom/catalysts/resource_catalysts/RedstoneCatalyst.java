@@ -18,7 +18,7 @@ public class RedstoneCatalyst extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("Blink and it'll invent teleportation").formatted(Formatting.LIGHT_PURPLE));
+        tooltip.add(Text.translatable("Blink and it'll invent teleportation").formatted(Formatting.GREEN));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

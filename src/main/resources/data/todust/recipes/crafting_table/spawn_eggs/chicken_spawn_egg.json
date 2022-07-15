@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CAC",
+    "AAA",
+    "CAC"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:perfect_egg"
+    },
+    "C": {
+      "tag": "todust:cut_dusts"
+    }
+  },
+  "result": {
+    "item": "minecraft:chicken_spawn_egg"
+  }
+}

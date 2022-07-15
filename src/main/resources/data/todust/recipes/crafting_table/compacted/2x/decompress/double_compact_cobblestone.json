@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "todust:double_compact_cobblestone"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "todust:compact_cobblestone"
+  }
+}

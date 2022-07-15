@@ -18,7 +18,7 @@ public class OrichalcumCatalyst extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("It green! It hit good!").formatted(Formatting.LIGHT_PURPLE));
+        tooltip.add(Text.translatable("It green! It hit good!").formatted(Formatting.GREEN));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CBC",
+    "BAB",
+    "CBC"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:blank_disc"
+    },
+    "B": {
+      "item": "todust:perfect_purple_dye"
+    },
+    "C": {
+      "item": "todust:relic_gold_ingot"
+    }
+  },
+  "result": {
+    "item": "todust:overthinker_music_disc"
+  }
+}

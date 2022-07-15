@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CAC",
+    "ABA",
+    "CAC"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:perfect_sponge"
+    },
+    "B": {
+      "item": "todust:tier_iv_core"
+    },
+    "C": {
+      "item": "todust:reinforcing_plate"
+    }
+  },
+  "result": {
+    "item": "todust:elder_guardian_catalyst"
+  }
+}

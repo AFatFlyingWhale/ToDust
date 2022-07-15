@@ -1,0 +1,138 @@
+{
+  "distance_daizies": {
+    "sounds": [
+      {
+        "name": "todust:distance_daizies",
+        "stream": true
+      }
+    ]
+  },
+  "serious": {
+    "sounds": [
+      {
+        "name": "todust:serious",
+        "stream": true
+      }
+    ]
+  },
+  "sientelo": {
+    "sounds": [
+      {
+        "name": "todust:sientelo",
+        "stream": true
+      }
+    ]
+  },
+  "from_here": {
+    "sounds": [
+      {
+        "name": "todust:from_here",
+        "stream": true
+      }
+    ]
+  },
+  "gold_dust": {
+    "sounds": [
+      {
+        "name": "todust:gold_dust",
+        "stream": true
+      }
+    ]
+  },
+  "macky_gee_tour": {
+    "sounds": [
+      {
+        "name": "todust:macky_gee_tour",
+        "stream": true
+      }
+    ]
+  },
+  "bullets": {
+    "sounds": [
+      {
+        "name": "todust:bullets",
+        "stream": true
+      }
+    ]
+  },
+  "bon_voyage": {
+    "sounds": [
+      {
+        "name": "todust:bon_voyage",
+        "stream": true
+      }
+    ]
+  },
+  "anvil": {
+    "sounds": [
+      {
+        "name": "todust:anvil",
+        "stream": true
+      }
+    ]
+  },
+  "hometown": {
+    "sounds": [
+      {
+        "name": "todust:hometown",
+        "stream": true
+      }
+    ]
+  },
+  "overthinker": {
+    "sounds": [
+      {
+        "name": "todust:overthinker",
+        "stream": true
+      }
+    ]
+  },
+  "deference": {
+    "sounds": [
+      {
+        "name": "todust:deference",
+        "stream": true
+      }
+    ]
+  },
+  "heart": {
+    "sounds": [
+      {
+        "name": "todust:heart",
+        "stream": true
+      }
+    ]
+  },
+  "gungnir": {
+    "sounds": [
+      {
+        "name": "todust:gungnir",
+        "stream": true
+      }
+    ]
+  },
+  "bfg_division": {
+    "sounds": [
+      {
+        "name": "todust:bfg_division",
+        "stream": true
+      }
+    ]
+  },
+  "never_meant": {
+    "sounds": [
+      {
+        "name": "todust:never_meant",
+        "stream": true
+      }
+    ]
+  },
+  "distance_buunshin": {
+    "sounds": [
+      {
+        "name": "todust:distance_buunshin",
+        "stream": true
+      }
+    ]
+  }
+}

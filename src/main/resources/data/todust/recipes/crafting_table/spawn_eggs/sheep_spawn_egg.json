@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CAC",
+    "ABA",
+    "CAC"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:perfect_wool"
+    },
+    "B": {
+      "item": "todust:perfect_egg"
+    },
+    "C": {
+      "tag": "todust:cut_dusts"
+    }
+  },
+  "result": {
+    "item": "minecraft:sheep_spawn_egg"
+  }
+}

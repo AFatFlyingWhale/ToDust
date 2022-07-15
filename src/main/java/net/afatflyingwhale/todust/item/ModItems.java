@@ -2,10 +2,15 @@ package net.afatflyingwhale.todust.item;
 
 import net.afatflyingwhale.todust.ToDust;
 import net.afatflyingwhale.todust.block.ModBlocks;
+import net.afatflyingwhale.todust.item.custom.ModMusicDiscItem;
 import net.afatflyingwhale.todust.item.custom.catalysts.catalyst_cores.ModCatalystCore1Item;
 import net.afatflyingwhale.todust.item.custom.catalysts.catalyst_cores.ModCatalystCore2Item;
 import net.afatflyingwhale.todust.item.custom.catalysts.catalyst_cores.ModCatalystCore3Item;
 import net.afatflyingwhale.todust.item.custom.catalysts.catalyst_cores.ModCatalystCore4Item;
+import net.afatflyingwhale.todust.item.custom.catalysts.dust_catalysts.*;
+import net.afatflyingwhale.todust.item.custom.catalysts.material_catalysts.*;
+import net.afatflyingwhale.todust.item.custom.catalysts.misc_catalysts.ArtisticCatalyst;
+import net.afatflyingwhale.todust.item.custom.catalysts.mob_catalysts.*;
 import net.afatflyingwhale.todust.item.custom.catalysts.resource_catalysts.*;
 import net.afatflyingwhale.todust.item.custom.perfects.PerfectItem;
 import net.afatflyingwhale.todust.item.custom.tooltypes.ModAxeItem;
@@ -14,17 +19,20 @@ import net.afatflyingwhale.todust.item.custom.tooltypes.ModPickaxeItem;
 import net.afatflyingwhale.todust.item.custom.tooltypes.sword_effect_types.ModHungerSwordItem;
 import net.afatflyingwhale.todust.item.custom.tooltypes.sword_effect_types.ModSlownessSwordItem;
 import net.afatflyingwhale.todust.item.custom.tooltypes.sword_effect_types.ModWeaknessSwordItem;
+import net.afatflyingwhale.todust.sounds.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.client.render.debug.BeeDebugRenderer;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
     // Dust Crystals
     public static final Item FIRE_DUST_CRYSTAL = registerItem("fire_dust_crystal",
-            new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+            new Item(new FabricItemSettings().group(ModItemGroup.TODUST).fireproof()));
     public static final Item WATER_DUST_CRYSTAL = registerItem("water_dust_crystal",
             new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item EARTH_DUST_CRYSTAL = registerItem("earth_dust_crystal",
@@ -37,12 +45,12 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
 
     // Dust Geodes
-    public static Item FIRE_DUST_BLOCK = new BlockItem(ModBlocks.FIRE_DUST_BLOCK, new Item.Settings().group(ModItemGroup.TODUST));
-    public static Item BUDDING_FIRE_DUST = new BlockItem(ModBlocks.BUDDING_FIRE_DUST, new Item.Settings().group(ModItemGroup.TODUST));
-    public static Item SMALL_FIRE_DUST_BUD = new BlockItem(ModBlocks.SMALL_FIRE_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
-    public static Item MEDIUM_FIRE_DUST_BUD = new BlockItem(ModBlocks.MEDIUM_FIRE_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
-    public static Item LARGE_FIRE_DUST_BUD = new BlockItem(ModBlocks.LARGE_FIRE_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST));
-    public static Item FIRE_DUST_CLUSTER = new BlockItem(ModBlocks.FIRE_DUST_CLUSTER, new Item.Settings().group(ModItemGroup.TODUST));
+    public static Item FIRE_DUST_BLOCK = new BlockItem(ModBlocks.FIRE_DUST_BLOCK, new Item.Settings().group(ModItemGroup.TODUST).fireproof());
+    public static Item BUDDING_FIRE_DUST = new BlockItem(ModBlocks.BUDDING_FIRE_DUST, new Item.Settings().group(ModItemGroup.TODUST).fireproof());
+    public static Item SMALL_FIRE_DUST_BUD = new BlockItem(ModBlocks.SMALL_FIRE_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST).fireproof());
+    public static Item MEDIUM_FIRE_DUST_BUD = new BlockItem(ModBlocks.MEDIUM_FIRE_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST).fireproof());
+    public static Item LARGE_FIRE_DUST_BUD = new BlockItem(ModBlocks.LARGE_FIRE_DUST_BUD, new Item.Settings().group(ModItemGroup.TODUST).fireproof());
+    public static Item FIRE_DUST_CLUSTER = new BlockItem(ModBlocks.FIRE_DUST_CLUSTER, new Item.Settings().group(ModItemGroup.TODUST).fireproof());
 
     public static Item AIR_DUST_BLOCK = new BlockItem(ModBlocks.AIR_DUST_BLOCK, new Item.Settings().group(ModItemGroup.TODUST));
     public static Item BUDDING_AIR_DUST = new BlockItem(ModBlocks.BUDDING_AIR_DUST, new Item.Settings().group(ModItemGroup.TODUST));
@@ -212,14 +220,14 @@ public class ModItems {
         // Nephilim Dust???
 
     // Dust Powders
-    public static final Item FIRE_DUST_POWDER = registerItem("fire_dust_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item FIRE_DUST_POWDER = registerItem("fire_dust_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST).fireproof()));
     public static final Item AIR_DUST_POWDER = registerItem("air_dust_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item EARTH_DUST_POWDER = registerItem("earth_dust_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item WATER_DUST_POWDER = registerItem("water_dust_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item LIGHTNING_DUST_POWDER = registerItem("lightning_dust_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item GRAVITY_DUST_POWDER = registerItem("gravity_dust_powder", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     // Cut Dust Crystals
-    public static final Item CUT_FIRE_DUST = registerItem("cut_fire_dust", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item CUT_FIRE_DUST = registerItem("cut_fire_dust", new Item(new FabricItemSettings().group(ModItemGroup.TODUST).fireproof()));
     public static final Item CUT_AIR_DUST = registerItem("cut_air_dust", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item CUT_EARTH_DUST = registerItem("cut_earth_dust", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item CUT_WATER_DUST = registerItem("cut_water_dust", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
@@ -238,84 +246,162 @@ public class ModItems {
 
 
     // Resource Catalysts & Perfects
-    public static final Item COAL_CATALYST = registerItem("coal_catalyst", new CoalCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_COAL = registerItem("perfect_coal", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item COAL_CATALYST = registerItem("coal_catalyst", new CoalCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_COAL = registerItem("perfect_coal", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item IRON_CATALYST = registerItem("iron_catalyst", new IronCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_IRON = registerItem("perfect_iron", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item IRON_CATALYST = registerItem("iron_catalyst", new IronCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_IRON = registerItem("perfect_iron", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item GOLD_CATALYST = registerItem("gold_catalyst", new GoldCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_GOLD = registerItem("perfect_gold", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item GOLD_CATALYST = registerItem("gold_catalyst", new GoldCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_GOLD = registerItem("perfect_gold", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item COPPER_CATALYST = registerItem("copper_catalyst", new CopperCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_COPPER = registerItem("perfect_copper", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item COPPER_CATALYST = registerItem("copper_catalyst", new CopperCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_COPPER = registerItem("perfect_copper", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item DIAMOND_CATALYST = registerItem("diamond_catalyst", new DiamondCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_DIAMOND = registerItem("perfect_diamond", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item DIAMOND_CATALYST = registerItem("diamond_catalyst", new DiamondCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_DIAMOND = registerItem("perfect_diamond", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item EMERALD_CATALYST = registerItem("emerald_catalyst", new EmeraldCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_EMERALD = registerItem("perfect_emerald", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item EMERALD_CATALYST = registerItem("emerald_catalyst", new EmeraldCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_EMERALD = registerItem("perfect_emerald", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item REDSTONE_CATALYST = registerItem("redstone_catalyst", new RedstoneCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_REDSTONE = registerItem("perfect_redstone", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item REDSTONE_CATALYST = registerItem("redstone_catalyst", new RedstoneCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_REDSTONE = registerItem("perfect_redstone", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item LAPIS_CATALYST = registerItem("lapis_catalyst", new LapisCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_LAPIS = registerItem("perfect_lapis", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item LAPIS_CATALYST = registerItem("lapis_catalyst", new LapisCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_LAPIS = registerItem("perfect_lapis", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item NETHERITE_CATALYST = registerItem("netherite_catalyst", new NetheriteCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_NETHERITE = registerItem("perfect_netherite", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item NETHERITE_CATALYST = registerItem("netherite_catalyst", new NetheriteCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC).fireproof()));
+    public static final Item PERFECT_NETHERITE = registerItem("perfect_netherite", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON).fireproof()));
 
-    public static final Item RELIC_IRON_CATALYST = registerItem("relic_iron_catalyst", new RelicIronCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_RELIC_IRON = registerItem("perfect_relic_iron", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item RELIC_IRON_CATALYST = registerItem("relic_iron_catalyst", new RelicIronCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_RELIC_IRON = registerItem("perfect_relic_iron", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item RELIC_GOLD_CATALYST = registerItem("relic_gold_catalyst", new RelicGoldCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_RELIC_GOLD = registerItem("perfect_relic_gold", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item RELIC_GOLD_CATALYST = registerItem("relic_gold_catalyst", new RelicGoldCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_RELIC_GOLD = registerItem("perfect_relic_gold", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item MITHRIL_CATALYST = registerItem("mithril_catalyst", new MithrilCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_MITHRIL = registerItem("perfect_mithril", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item MITHRIL_CATALYST = registerItem("mithril_catalyst", new MithrilCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_MITHRIL = registerItem("perfect_mithril", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item ORICHALCUM_CATALYST = registerItem("orichalcum_catalyst", new OrichalcumCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_ORICHALCUM = registerItem("perfect_orichalcum", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item ORICHALCUM_CATALYST = registerItem("orichalcum_catalyst", new OrichalcumCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_ORICHALCUM = registerItem("perfect_orichalcum", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item ADAMANTINE_CATALYST = registerItem("adamantine_catalyst", new AdamantineCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_ADAMANTINE = registerItem("perfect_adamantine", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item ADAMANTINE_CATALYST = registerItem("adamantine_catalyst", new AdamantineCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_ADAMANTINE = registerItem("perfect_adamantine", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item GILDED_STEEL_CATALYST = registerItem("gilded_steel_catalyst", new GildedSteelCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_GILDED_STEEL = registerItem("perfect_gilded_steel", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item GILDED_STEEL_CATALYST = registerItem("gilded_steel_catalyst", new GildedSteelCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_GILDED_STEEL = registerItem("perfect_gilded_steel", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item MALICHOR_CATALYST = registerItem("malichor_catalyst", new MalichorCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_MALICHOR = registerItem("perfect_malichor", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item MALICHOR_CATALYST = registerItem("malichor_catalyst", new MalichorCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC).fireproof()));
+    public static final Item PERFECT_MALICHOR = registerItem("perfect_malichor", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON).fireproof()));
 
-    public static final Item QUARTZ_CATALYST = registerItem("quartz_catalyst", new QuartzCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_QUARTZ = registerItem("perfect_quartz", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item QUARTZ_CATALYST = registerItem("quartz_catalyst", new QuartzCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_QUARTZ = registerItem("perfect_quartz", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
-    public static final Item GLOWSTONE_CATALYST = registerItem("glowstone_catalyst", new GlowstoneCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST)));
-    public static final Item PERFECT_GLOWSTONE = registerItem("perfect_glowstone", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item GLOWSTONE_CATALYST = registerItem("glowstone_catalyst", new GlowstoneCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_GLOWSTONE = registerItem("perfect_glowstone", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    public static final Item AMETHYST_CATALYST = registerItem("amethyst_catalyst", new AmethystCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_AMETHYST = registerItem("perfect_amethyst", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
 
     // Dust Catalysts & Perfects
-        // Fire Dust Catalyst - "Oof, ow, hot, hot!"
-        // Air Dust Catalyst - "Feels like I'm holding nothing at all!"
-        // Earth Dust Catalyst - "Heavy, fragile and sharp"
-        // Water Dust Catalyst - "DO NOT DRINK"
-        // Lightning Dust Catalyst - "Pocket thunderstorm"
-        // Gravity Dust Catalyst - "The portable hole!"
+    public static final Item FIRE_DUST_CATALYST = registerItem("fire_dust_catalyst", new FireDustCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC).fireproof()));
+    public static final Item PERFECT_FIRE_DUST = registerItem("perfect_fire_dust", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON).fireproof()));
+
+    public static final Item AIR_DUST_CATALYST = registerItem("air_dust_catalyst", new AirDustCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_AIR_DUST = registerItem("perfect_air_dust", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    public static final Item EARTH_DUST_CATALYST = registerItem("earth_dust_catalyst", new EarthDustCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_EARTH_DUST = registerItem("perfect_earth_dust", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    public static final Item WATER_DUST_CATALYST = registerItem("water_dust_catalyst", new WaterDustCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_WATER_DUST = registerItem("perfect_water_dust", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    public static final Item LIGHTNING_DUST_CATALYST = registerItem("lightning_dust_catalyst", new LightningDustCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_LIGHTNING_DUST = registerItem("perfect_lightning_dust", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    public static final Item GRAVITY_DUST_CATALYST = registerItem("gravity_dust_catalyst", new GravityDustCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_GRAVITY_DUST = registerItem("perfect_gravity_dust", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
     // Material Catalysts
+        // Cobblestone Catalyst
+    public static final Item COBBLESTONE_CATALYST = registerItem("cobblestone_catalyst", new CobblestoneCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_COBBLESTONE = registerItem("perfect_cobblestone", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
         // Stone Catalyst - "From the deep"
+    public static final Item STONE_CATALYST = registerItem("stone_catalyst", new StoneCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_STONE = registerItem("perfect_stone", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
         // Deepslate Catalyst - "From the deeper"
+    public static final Item DEEPSLATE_CATALYST = registerItem("deepslate_catalyst", new DeepslateCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_DEEPSLATE = registerItem("perfect_deepslate", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
         // Netherrack Catalyst - "From the deepest"
+    public static final Item NETHERRACK_CATALYST = registerItem("netherrack_catalyst", new NetherrackCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_NETHERRACK = registerItem("perfect_netherrack", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
         // Blackstone Catalyst - "Not politically correct"
+    public static final Item BLACKSTONE_CATALYST = registerItem("blackstone_catalyst", new BlackstoneCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_BLACKSTONE = registerItem("perfect_blackstone", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
         // Basalt Catalyst - "Igneous? No, ig-nice-s"
+    public static final Item BASALT_CATALYST = registerItem("basalt_catalyst", new BasaltCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_BASALT = registerItem("perfect_basalt", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
         // Calcite Catalyst - "Poor man's marble"
+    public static final Item CALCITE_CATALYST = registerItem("calcite_catalyst", new CalciteCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_CALCITE = registerItem("perfect_calcite", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
         // Andesite Catalyst - "Rich man's stone"
+    public static final Item ANDESITE_CATALYST = registerItem("andesite_catalyst", new AndesiteCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_ANDESITE = registerItem("perfect_andesite", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
         // Granite Catalyst - "Taking things for granite"
+    public static final Item GRANITE_CATALYST = registerItem("granite_catalyst", new GraniteCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_GRANITE = registerItem("perfect_granite", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
         // Diorite Catalyst - "Bird Crapalyst"
+    public static final Item DIORITE_CATALYST = registerItem("diorite_catalyst", new DioriteCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_DIORITE = registerItem("perfect_diorite", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
         // Dirt Catalyst - "You've got a jar of dirt!"
+    public static final Item DIRT_CATALYST = registerItem("dirt_catalyst", new DirtCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_DIRT = registerItem("perfect_dirt", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
         // Sand Catalyst - "Pocket sand!"
+    public static final Item SAND_CATALYST = registerItem("sand_catalyst", new SandCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_SAND = registerItem("perfect_sand", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
         // Gravel Catalyst - "Fancy pebbles"
+    public static final Item GRAVEL_CATALYST = registerItem("gravel_catalyst", new GravelCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_GRAVEL = registerItem("perfect_gravel", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+        // Ice Catalyst - ice+packed+blue
+    public static final Item ICE_CATALYST = registerItem("ice_catalyst", new IceCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_ICE = registerItem("perfect_ice", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+        // Mud Catalyst - Tough mudder
+    public static final Item MUD_CATALYST = registerItem("mud_catalyst", new MudCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_MUD = registerItem("perfect_mud", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+        // Soul Sand Catalyst - Soulthief
+    public static final Item SOUL_SAND_CATALYST = registerItem("soul_sand_catalyst", new SoulSandCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_SOUL_SAND = registerItem("perfect_soul_sand", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+        // Clay Catalyst - Primitive technology
+    public static final Item CLAY_CATALYST = registerItem("clay_catalyst", new ClayCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_CLAY = registerItem("perfect_clay", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+        // Obsidian Catalyst - Hardest glass you'll ever see
+    public static final Item OBSIDIAN_CATALYST = registerItem("obsidian_catalyst", new ObsidianCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_OBSIDIAN = registerItem("perfect_obsidian", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+        // End Stone Catalyst
+    public static final Item END_STONE_CATALYST = registerItem("end_stone_catalyst", new EndStoneCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_END_STONE = registerItem("perfect_end_stone", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
     // Misc Catalysts
         // Artistic Catalyst
-        // Musical Catalyst
-    // Wood Catalysts
+    public static final Item ARTISTIC_CATALYST = registerItem("artistic_catalyst", new ArtisticCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+
+    public static final Item PERFECT_WHITE_DYE = registerItem("perfect_white_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_ORANGE_DYE = registerItem("perfect_orange_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_MAGENTA_DYE = registerItem("perfect_magenta_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_LIGHT_BLUE_DYE = registerItem("perfect_light_blue_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_YELLOW_DYE = registerItem("perfect_yellow_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_LIME_DYE = registerItem("perfect_lime_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_PINK_DYE = registerItem("perfect_pink_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_GRAY_DYE = registerItem("perfect_gray_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_LIGHT_GRAY_DYE = registerItem("perfect_light_gray_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_CYAN_DYE = registerItem("perfect_cyan_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_PURPLE_DYE = registerItem("perfect_purple_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_BLUE_DYE = registerItem("perfect_blue_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_BROWN_DYE = registerItem("perfect_brown_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_GREEN_DYE = registerItem("perfect_green_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_RED_DYE = registerItem("perfect_red_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    public static final Item PERFECT_BLACK_DYE = registerItem("perfect_black_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+    // Natural Catalysts
             // Tier I
         // Oak Catalyst - "Begin anew"
         // Birch Catalyst - "Pales in comparison"
@@ -334,43 +420,159 @@ public class ModItems {
         // Wisewillow Catalyst - "Does not make you smarter"
         // Black Birch Catalyst - "It's like birch but darker"
         // Red Heartnut Catalyst - "The sap is a delicacy!"
+            // MORE
+        // Wheat
+        // Carrots
+        // Potato
+        // Beetroot
+        // Pumpkin
+        // Watermelon
+        // Sugarcane
+        // Cactus
+        // Cocoa Beans
+        // Chorus Fruit
+        // Sweet Berry
     // Mob Catalysts
-            // Tier I
-        // Cow - "Cow goes moo"
-        // Pig - "Mmm... bacon..."
-        // Sheep - "Counting makes me tired"
-        // Chicken - "Good protein?"
-        // Rabbit - "The most foul, cruel, and bad-tempered rodent you ever set eyes on"
-        // Fish - "Something's fishy"
-        // Bee - "It's not Forestry!"
-        // Goat - "2014 called"
-            // Mob Catalyst Core I
-            // Tier II
-        // Zombie Catalyst - "Mmm... brains..."
-        // Skeleton Catalyst - "Play me like a xylophone"
-        // Creeper Catalyst - "On the bright side, they aren't invisible?"
-        // Spider Catalyst - "Creepy crawlies"
-        // Enderman Catalyst - "Blink and you'll miss it"
-        // Pillager Catalyst - "Looters beware"
-        // Slime Catalyst - "Bounce. Bounce. Bounce"
-        // Blaze Catalyst - "Brewskis inbound"
-            // Mob Catalyst Core II
-            // Tier II
-        // Magma Cube Catalyst - "Bounce. Bounce. Bounce. But hotter"
-        // Phantom Catalyst - "MAINTAIN A HEALTHY SLEEP CYCLE"
-        // Guardian Catalyst - "It's like a cactus with fins! And a laser eye!"
-        // Ravager Catalyst - "A sentient garbage compactor with legs"
-        // Shulker Catalyst - "It's not flying, it's gliding, with style!"
-        // Drowned Catalyst - "The deep calls"
-        // Witch Catalyst - "Every tumblr user circa 2013"
-        // Wither Skeleton Catalyst - "Taller than they look"
-            // Mob Catalyst Core III
-            // Tier IV
-        // Wither - "Three heads does not equal more brains"
-        // Ender Dragon - "You killed a lot of mothers. Are you happy?"
-        // Warden - "Blind, but definitely not deaf"
-        // Elder Guardian - "Spiky fishy"
-            // Mob Catalyst Core IV
+        // Tier I
+    // Cow - "Cow goes moo"
+    public static final Item COW_CATALYST = registerItem("cow_catalyst", new CowCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_LEATHER = registerItem("perfect_leather", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Pig - "Mmm... bacon..."
+    public static final Item PIG_CATALYST = registerItem("pig_catalyst", new PigCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_PORK = registerItem("perfect_pork", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Sheep - "Counting makes me tired"
+    public static final Item SHEEP_CATALYST = registerItem("sheep_catalyst", new SheepCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_WOOL = registerItem("perfect_wool", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Chicken - "Good protein?"
+    public static final Item CHICKEN_CATALYST = registerItem("chicken_catalyst", new ChickenCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_EGG = registerItem("perfect_egg", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Rabbit - "The most foul, cruel, and bad-tempered rodent you ever set eyes on"
+    public static final Item RABBIT_CATALYST = registerItem("rabbit_catalyst", new RabbitCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_RABBIT_FOOT = registerItem("perfect_rabbit_foot", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Fish - "Something's fishy"
+    public static final Item FISH_CATALYST = registerItem("fish_catalyst", new FishCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_FISH = registerItem("perfect_fish", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Bee - "It's not Forestry!"
+    public static final Item BEE_CATALYST = registerItem("bee_catalyst", new BeeCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_HONEYCOMB = registerItem("perfect_honeycomb", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Goat - "2014 called"
+    public static final Item GOAT_CATALYST = registerItem("goat_catalyst", new GoatCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_HORN = registerItem("perfect_horn", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+        // Tier II
+    //Zombie Catalyst - "Mmm... brains..."
+        public static final Item ZOMBIE_CATALYST = registerItem("zombie_catalyst", new ZombieCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_ROTTEN_FLESH = registerItem("perfect_rotten_flesh", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Skeleton Catalyst - "Play me like a xylophone"
+    public static final Item SKELETON_CATALYST = registerItem("skeleton_catalyst", new SkeletonCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_BONE = registerItem("perfect_bone", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Creeper Catalyst - "On the bright side, they aren't invisible?"
+    public static final Item CREEPER_CATALYST = registerItem("creeper_catalyst", new CreeperCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_GUNPOWDER = registerItem("perfect_gunpowder", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Spider Catalyst - "Creepy crawlies"
+    public static final Item SPIDER_CATALYST = registerItem("spider_catalyst", new SpiderCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_EYE = registerItem("perfect_eye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Enderman Catalyst - "Blink and you'll miss it"
+    public static final Item ENDERMAN_CATALYST = registerItem("enderman_catalyst", new EndermanCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_PEARL = registerItem("perfect_pearl", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Pillager Catalyst - "Looters beware"
+    public static final Item PILLAGER_CATALYST = registerItem("pillager_catalyst", new PillagerCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_TOTEM = registerItem("perfect_totem", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Slime Catalyst - "Bounce. Bounce. Bounce"
+    public static final Item SLIME_CATALYST = registerItem("slime_catalyst", new SlimeCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_SLIMEBALL = registerItem("perfect_slimeball", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Blaze Catalyst - "Brewskis inbound"
+    public static final Item BLAZE_CATALYST = registerItem("blaze_catalyst", new BlazeCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_ROD = registerItem("perfect_rod", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+        // Tier III
+    // Magma Cube Catalyst - "Bounce. Bounce. Bounce. But hotter"
+        public static final Item MAGMA_CUBE_CATALYST = registerItem("magma_cube_catalyst", new MagmaCubeCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_CREAM = registerItem("perfect_cream", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Phantom Catalyst - "MAINTAIN A HEALTHY SLEEP CYCLE"
+    public static final Item PHANTOM_CATALYST = registerItem("phantom_catalyst", new PhantomCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_MEMBRANE = registerItem("perfect_membrane", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Guardian Catalyst - "It's like a cactus with fins! And a laser eye!"
+    public static final Item GUARDIAN_CATALYST = registerItem("guardian_catalyst", new GuardianCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_PRISMARINE = registerItem("perfect_prismarine", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Ghast Catalyst - "Ghussy"
+    public static final Item GHAST_CATALYST = registerItem("ghast_catalyst", new GhastCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_TEAR = registerItem("perfect_tear", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Shulker Catalyst - "It's not flying, it's gliding, with style!"
+    public static final Item SHULKER_CATALYST = registerItem("shulker_catalyst", new ShulkerCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_SHELL = registerItem("perfect_shell", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Drowned Catalyst - "The deep calls"
+    public static final Item DROWNED_CATALYST = registerItem("drowned_catalyst", new DrownedCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_NAUTILUS = registerItem("perfect_nautilus", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Witch Catalyst - "Every tumblr user circa 2013"
+    public static final Item WITCH_CATALYST = registerItem("witch_catalyst", new WitchCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_POTION = registerItem("perfect_potion", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Wither Skeleton Catalyst - "Taller than they look"
+    public static final Item WITHER_SKELETON_CATALYST = registerItem("wither_skeleton_catalyst", new WitherSkeletonCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_SKULL = registerItem("perfect_skull", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Tier IV
+    // Wither - "Three heads does not equal more brains"
+    public static final Item WITHER_CATALYST = registerItem("wither_catalyst", new WitherCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_STAR = registerItem("perfect_star", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Ender Dragon - "You killed a lot of mothers. Are you happy?"
+    public static final Item ENDER_DRAGON_CATALYST = registerItem("ender_dragon_catalyst", new EnderDragonCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_DRAGON_EGG = registerItem("perfect_dragon_egg", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Warden - "Blind, but definitely not deaf"
+    public static final Item WARDEN_CATALYST = registerItem("warden_catalyst", new WardenCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_HEART = registerItem("perfect_heart", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+    // Elder Guardian - "Spiky fishy"
+    public static final Item ELDER_GUARDIAN_CATALYST = registerItem("elder_guardian_catalyst", new ElderGuardianCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
+    public static final Item PERFECT_SPONGE = registerItem("perfect_sponge", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
+
+
+
+    // Music Discs
+    public static final Item BLANK_DISC = registerItem("blank_disc", new Item(new FabricItemSettings().group(ModItemGroup.TODUST)));
+
+    public static final Item DISTANCE_DAIZIES_MUSIC_DISC = registerItem("distance_daizies_music_disc", new ModMusicDiscItem(7, ModSounds.DISTANCE_DAIZIES, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item SERIOUS_MUSIC_DISC = registerItem("serious_music_disc", new ModMusicDiscItem(7, ModSounds.SERIOUS, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item SIENTELO_MUSIC_DISC = registerItem("sientelo_music_disc", new ModMusicDiscItem(7, ModSounds.SIENTELO, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item FROM_HERE_MUSIC_DISC = registerItem("from_here_music_disc", new ModMusicDiscItem(7, ModSounds.FROM_HERE, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item GOLD_DUST_MUSIC_DISC = registerItem("gold_dust_music_disc", new ModMusicDiscItem(7, ModSounds.GOLD_DUST, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item TOUR_MUSIC_DISC = registerItem("tour_music_disc", new ModMusicDiscItem(7, ModSounds.MACKY_GEE_TOUR, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item BULLETS_MUSIC_DISC = registerItem("bullets_music_disc", new ModMusicDiscItem(7, ModSounds.BULLETS, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item BON_VOYAGE_MUSIC_DISC = registerItem("bon_voyage_music_disc", new ModMusicDiscItem(7, ModSounds.BON_VOYAGE, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item ANVIL_MUSIC_DISC = registerItem("anvil_music_disc", new ModMusicDiscItem(7, ModSounds.ANVIL, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item HOMETOWN_MUSIC_DISC = registerItem("hometown_music_disc", new ModMusicDiscItem(7, ModSounds.HOMETOWN, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item OVERTHINKER_MUSIC_DISC = registerItem("overthinker_music_disc", new ModMusicDiscItem(7, ModSounds.OVERTHINKER, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item DEFERENCE_MUSIC_DISC = registerItem("deference_music_disc", new ModMusicDiscItem(7, ModSounds.DEFERENCE, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item HEART_MUSIC_DISC = registerItem("heart_music_disc", new ModMusicDiscItem(7, ModSounds.HEART, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item GUNGNIR_MUSIC_DISC = registerItem("gungnir_music_disc", new ModMusicDiscItem(7, ModSounds.GUNGNIR, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item BFG_DIVISION_MUSIC_DISC = registerItem("bfg_division_music_disc", new ModMusicDiscItem(7, ModSounds.BFG_DIVISION, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item DISTANCE_BUUNSHIN_MUSIC_DISC = registerItem("distance_buunshin_music_disc", new ModMusicDiscItem(7, ModSounds.DISTANCE_BUUNSHIN, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+    public static final Item NEVER_MEANT_MUSIC_DISC = registerItem("never_meant_music_disc", new ModMusicDiscItem(7, ModSounds.NEVER_MEANT, new FabricItemSettings().group(ModItemGroup.TODUST).maxCount(1).rarity(Rarity.RARE)));
+
+
 
     // Wood Cores
 

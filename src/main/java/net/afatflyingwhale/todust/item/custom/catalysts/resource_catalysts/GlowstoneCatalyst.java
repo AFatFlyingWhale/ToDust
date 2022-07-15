@@ -18,8 +18,8 @@ public class GlowstoneCatalyst extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("In the darkness, the smallest of").formatted(Formatting.LIGHT_PURPLE));
-        tooltip.add(Text.translatable("lights can shine just as bright").formatted(Formatting.LIGHT_PURPLE));
+        tooltip.add(Text.translatable("In the darkness, the smallest of").formatted(Formatting.GREEN));
+        tooltip.add(Text.translatable("lights can shine just as bright").formatted(Formatting.GREEN));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

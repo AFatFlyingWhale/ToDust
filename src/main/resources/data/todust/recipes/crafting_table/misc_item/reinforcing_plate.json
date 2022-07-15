@@ -10,7 +10,7 @@
       "item": "todust:relic_iron_ingot"
     },
     "B": {
-      "item": "minecraft:obsidian"
+      "tag": "c:obsidian"
     },
     "C": {
       "tag": "todust:cut_dusts"

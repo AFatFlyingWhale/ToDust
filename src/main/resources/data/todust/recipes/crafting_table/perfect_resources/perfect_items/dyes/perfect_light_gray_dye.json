@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:light_gray_dye"
+    },
+    "B": {
+      "item": "todust:catalyst_binder"
+    }
+  },
+  "result": {
+    "item": "todust:perfect_light_gray_dye"
+  }
+}

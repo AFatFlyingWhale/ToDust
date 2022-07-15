@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CAC",
+    "ABA",
+    "CAC"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:perfect_heart"
+    },
+    "B": {
+      "item": "todust:tier_iv_core"
+    },
+    "C": {
+      "item": "todust:reinforcing_plate"
+    }
+  },
+  "result": {
+    "item": "todust:warden_catalyst"
+  }
+}

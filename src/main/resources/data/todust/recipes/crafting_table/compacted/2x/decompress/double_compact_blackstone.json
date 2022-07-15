@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "todust:double_compact_blackstone"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "todust:compact_blackstone"
+  }
+}

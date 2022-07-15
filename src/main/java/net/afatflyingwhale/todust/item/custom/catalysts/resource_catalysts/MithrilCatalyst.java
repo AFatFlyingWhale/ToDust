@@ -18,7 +18,7 @@ public class MithrilCatalyst extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("The entire wealth of Moria").formatted(Formatting.LIGHT_PURPLE));
+        tooltip.add(Text.translatable("The entire wealth of Moria").formatted(Formatting.GREEN));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

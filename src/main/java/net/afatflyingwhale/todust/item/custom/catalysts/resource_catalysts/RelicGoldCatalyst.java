@@ -18,7 +18,7 @@ public class RelicGoldCatalyst extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("It's g-older!").formatted(Formatting.LIGHT_PURPLE));
+        tooltip.add(Text.translatable("It's g-older!").formatted(Formatting.GREEN));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CAC",
+    "ABA",
+    "CAC"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:perfect_pork"
+    },
+    "B": {
+      "item": "todust:tier_i_core"
+    },
+    "C": {
+      "item": "todust:reinforcing_plate"
+    }
+  },
+  "result": {
+    "item": "todust:pig_catalyst"
+  }
+}

@@ -18,7 +18,7 @@ public class CopperCatalyst extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("Definitely a new material!").formatted(Formatting.LIGHT_PURPLE));
+        tooltip.add(Text.translatable("Definitely a new material!").formatted(Formatting.GREEN));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

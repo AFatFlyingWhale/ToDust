@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CAC",
+    "ABA",
+    "CAC"
+  ],
+  "key": {
+    "A": {
+      "item": "todust:perfect_rabbit_foot"
+    },
+    "B": {
+      "item": "todust:perfect_egg"
+    },
+    "C": {
+      "tag": "todust:cut_dusts"
+    }
+  },
+  "result": {
+    "item": "minecraft:rabbit_spawn_egg"
+  }
+}

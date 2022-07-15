@@ -18,8 +18,8 @@ public class RelicIronCatalyst extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("Old metal from beneath,").formatted(Formatting.LIGHT_PURPLE));
-        tooltip.add(Text.translatable("like all metal, actually").formatted(Formatting.LIGHT_PURPLE));
+        tooltip.add(Text.translatable("Old metal from beneath,").formatted(Formatting.GREEN));
+        tooltip.add(Text.translatable("like all metal, actually").formatted(Formatting.GREEN));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

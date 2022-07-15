@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "todust:compact_blackstone"
+    }
+  },
+  "result": {
+    "item": "todust:double_compact_blackstone"
+  }
+}

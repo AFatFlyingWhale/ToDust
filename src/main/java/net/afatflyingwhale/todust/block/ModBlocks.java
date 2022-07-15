@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableList;
 import net.afatflyingwhale.todust.ToDust;
 import net.afatflyingwhale.todust.block.custom.GeodeBuddingBlock;
 import net.afatflyingwhale.todust.item.ModItemGroup;
+import net.afatflyingwhale.todust.item.ModItems;
 import net.afatflyingwhale.todust.sounds.ModBlockSoundGroups;
 import net.afatflyingwhale.todust.world.feature.tree.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -245,6 +246,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
 
     // PERFECT BLOCKS
+        // Resources
     public static final Block PERFECT_COAL_BLOCK = registerBlock("perfect_coal_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
     public static final Block PERFECT_IRON_BLOCK = registerBlock("perfect_iron_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
     public static final Block PERFECT_GOLD_BLOCK = registerBlock("perfect_gold_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
@@ -263,6 +265,55 @@ public class ModBlocks {
     public static final Block PERFECT_MALICHOR_BLOCK = registerBlock("perfect_malichor_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TODUST);
     public static final Block PERFECT_QUARTZ_BLOCK = registerBlock("perfect_quartz_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
     public static final Block PERFECT_GLOWSTONE_BLOCK = registerBlock("perfect_glowstone_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_AMETHYST_BLOCK = registerBlock("perfect_amethyst_block", new Block(FabricBlockSettings.of(Material.AMETHYST).strength(2f).requiresTool()), ModItemGroup.TODUST);
+        // Dust
+    public static final Block PERFECT_FIRE_DUST_BLOCK = registerBlock("perfect_fire_dust_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_AIR_DUST_BLOCK = registerBlock("perfect_air_dust_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_EARTH_DUST_BLOCK = registerBlock("perfect_earth_dust_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_WATER_DUST_BLOCK = registerBlock("perfect_water_dust_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_LIGHTNING_DUST_BLOCK = registerBlock("perfect_lightning_dust_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block PERFECT_GRAVITY_DUST_BLOCK = registerBlock("perfect_gravity_dust_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+        // Materials (Compacted)
+    public static final Block COMPACT_COBBLESTONE = registerBlock("compact_cobblestone", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_STONE = registerBlock("compact_stone", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_DEEPSLATE = registerBlock("compact_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_NETHERRACK = registerBlock("compact_netherrack", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_BLACKSTONE = registerBlock("compact_blackstone", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_BASALT = registerBlock("compact_basalt", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_CALCITE = registerBlock("compact_calcite", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_ANDESITE = registerBlock("compact_andesite", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_GRANITE = registerBlock("compact_granite", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_DIORITE = registerBlock("compact_diorite", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_DIRT = registerBlock("compact_dirt", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_SAND = registerBlock("compact_sand", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_GRAVEL = registerBlock("compact_gravel", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_ICE = registerBlock("compact_ice", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_MUD = registerBlock("compact_mud", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_SOUL_SAND = registerBlock("compact_soul_sand", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_CLAY = registerBlock("compact_clay", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_OBSIDIAN = registerBlock("compact_obsidian", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block COMPACT_END_STONE = registerBlock("compact_end_stone", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+        // Materials (Double Compacted)
+    public static final Block DOUBLE_COMPACT_COBBLESTONE = registerBlock("double_compact_cobblestone", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_STONE = registerBlock("double_compact_stone", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_DEEPSLATE = registerBlock("double_compact_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_NETHERRACK = registerBlock("double_compact_netherrack", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_BLACKSTONE = registerBlock("double_compact_blackstone", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_BASALT = registerBlock("double_compact_basalt", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_CALCITE = registerBlock("double_compact_calcite", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_ANDESITE = registerBlock("double_compact_andesite", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_GRANITE = registerBlock("double_compact_granite", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_DIORITE = registerBlock("double_compact_diorite", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_DIRT = registerBlock("double_compact_dirt", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_SAND = registerBlock("double_compact_sand", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_GRAVEL = registerBlock("double_compact_gravel", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_ICE = registerBlock("double_compact_ice", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_MUD = registerBlock("double_compact_mud", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_SOUL_SAND = registerBlock("double_compact_soul_sand", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_CLAY = registerBlock("double_compact_clay", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_OBSIDIAN = registerBlock("double_compact_obsidian", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+    public static final Block DOUBLE_COMPACT_END_STONE = registerBlock("double_compact_end_stone", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.TODUST);
+
 
 // REGISTRY CODE
     public static void registerDustBlocks() {

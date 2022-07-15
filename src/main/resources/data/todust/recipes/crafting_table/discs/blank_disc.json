@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CBC",
+    "BAB",
+    "CBC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:note_block"
+    },
+    "B": {
+      "item": "todust:cut_air_dust"
+    },
+    "C": {
+      "item": "todust:relic_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "todust:blank_disc"
+  }
+}

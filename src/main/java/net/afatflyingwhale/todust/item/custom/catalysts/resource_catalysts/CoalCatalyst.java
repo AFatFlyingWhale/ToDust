@@ -18,7 +18,7 @@ public class CoalCatalyst extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("You could smelt a lot with this").formatted(Formatting.LIGHT_PURPLE));
+        tooltip.add(Text.translatable("You could smelt a lot with this").formatted(Formatting.GREEN));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }
