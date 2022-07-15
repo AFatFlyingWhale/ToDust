@@ -21,7 +21,8 @@ public enum ModArmorMaterials implements ArmorMaterial {
     //NETHERITE("netherite", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f, () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
     MITHRIL("mithril", 18, new int[]{2, 5, 6, 2}, 24, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.ofItems(ModItems.MITHRIL_INGOT)),
     ORICHALCUM("orichalcum", 30, new int[]{3, 6, 8, 3}, 24, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0f, 0.0f, () -> Ingredient.ofItems(ModItems.ORICHALCUM_INGOT)),
-    ADAMANTINE("adamantine", 36, new int[]{3, 6, 8, 3}, 24, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.5f, 0.1f, () -> Ingredient.ofItems(ModItems.ADAMANTINE_INGOT));
+    ADAMANTINE("adamantine", 36, new int[]{3, 6, 8, 3}, 24, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.5f, 0.1f, () -> Ingredient.ofItems(ModItems.ADAMANTINE_INGOT)),
+    MALICHOR("malichor", 40, new int[]{5, 8, 10, 5}, 30, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.5f, 0.3f, () -> Ingredient.ofItems(ModItems.MALICHOR_INGOT));
 
     private static final int[] BASE_DURABILITY;
     private final String name;

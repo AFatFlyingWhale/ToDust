@@ -182,6 +182,13 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.ADAMANTINE, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item ADAMANTINE_BOOTS = registerItem("adamantine_boots",
             new ArmorItem(ModArmorMaterials.ADAMANTINE, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.TODUST)));
+    // Malichor
+
+
+    public static final Item MALICHOR_HELMET = registerItem("malichor_helmet", new ArmorItem(ModArmorMaterials.MALICHOR, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item MALICHOR_CHESTPLATE = registerItem("malichor_chestplate", new ArmorItem(ModArmorMaterials.MALICHOR, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item MALICHOR_LEGGINGS = registerItem("malichor_leggings", new ArmorItem(ModArmorMaterials.MALICHOR, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item MALICHOR_BOOTS = registerItem("malichor_boots", new ArmorItem(ModArmorMaterials.MALICHOR, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.TODUST)));
 
     // Misc Materials
         // Small Coals
@@ -402,38 +409,38 @@ public class ModItems {
     public static final Item PERFECT_RED_DYE = registerItem("perfect_red_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
     public static final Item PERFECT_BLACK_DYE = registerItem("perfect_black_dye", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));
     // Natural Catalysts
-            // Tier I
-        // Oak Catalyst - "Begin anew"
-        // Birch Catalyst - "Pales in comparison"
-        // Spruce Catalyst - "Cold winter's night"
-        // Jungle Catalyst - "Humidity cubed"
-        // Acacia Catalyst - "Tastes like sherbet"
-        // Dark Oak Catalyst - "Best wood 10/10"
-        // Mangrove Catalyst - "New, improved, mysterious, mangrove"
-        // Sapling Catalyst - "Made from life's potential!"
-            // Tier II
-        // Crimson Stem Catalyst - "What's red all over?"
-        // Warped Stem Catalyst - "Mycological nightmare"
-        // Twisted Oak Catalyst - "Dizzy-maker"
-        // Magebane Catalyst - "A wizard's worst nightmare"
-        // Pyrewood Catalyst - "Burn, baby, burn!"
-        // Wisewillow Catalyst - "Does not make you smarter"
-        // Black Birch Catalyst - "It's like birch but darker"
-        // Red Heartnut Catalyst - "The sap is a delicacy!"
-            // MORE
-        // Wheat
-        // Carrots
-        // Potato
-        // Beetroot
-        // Pumpkin
-        // Watermelon
-        // Sugarcane
-        // Cactus
-        // Cocoa Beans
-        // Chorus Fruit
-        // Sweet Berry
+    // Tier I
+    // Oak Catalyst - "Begin anew"
+    // Birch Catalyst - "Pales in comparison"
+    // Spruce Catalyst - "Cold winter's night"
+    // Jungle Catalyst - "Humidity cubed"
+    // Acacia Catalyst - "Tastes like sherbet"
+    // Dark Oak Catalyst - "Best wood 10/10"
+    // Mangrove Catalyst - "New, improved, mysterious, mangrove"
+    // Sapling Catalyst - "Made from life's potential!"
+    // Tier II
+    // Crimson Stem Catalyst - "What's red all over?"
+    // Warped Stem Catalyst - "Mycological nightmare"
+    // Twisted Oak Catalyst - "Dizzy-maker"
+    // Magebane Catalyst - "A wizard's worst nightmare"
+    // Pyrewood Catalyst - "Burn, baby, burn!"
+    // Wisewillow Catalyst - "Does not make you smarter"
+    // Black Birch Catalyst - "It's like birch but darker"
+    // Red Heartnut Catalyst - "The sap is a delicacy!"
+    // MORE
+    // Wheat
+    // Carrots
+    // Potato
+    // Beetroot
+    // Pumpkin
+    // Watermelon
+    // Sugarcane
+    // Cactus
+    // Cocoa Beans
+    // Chorus Fruit
+    // Sweet Berry
     // Mob Catalysts
-        // Tier I
+    // Tier I
     // Cow - "Cow goes moo"
     public static final Item COW_CATALYST = registerItem("cow_catalyst", new CowCatalyst(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.EPIC)));
     public static final Item PERFECT_LEATHER = registerItem("perfect_leather", new PerfectItem(new FabricItemSettings().group(ModItemGroup.TODUST).rarity(Rarity.UNCOMMON)));

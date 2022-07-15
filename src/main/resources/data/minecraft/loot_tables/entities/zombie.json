@@ -11,35 +11,6 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": -1.0
-              },
-              "function": "minecraft:set_count"
-            },
-            {
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
-              },
-              "function": "minecraft:looting_enchant"
-            }
-          ],
-          "name": "minecraft:coal"
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
                 "max": 2.0,
                 "min": 0.0
               },
@@ -54,7 +25,7 @@
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "minecraft:bone"
+          "name": "minecraft:rotten_flesh"
         }
       ],
       "rolls": 1.0
@@ -74,27 +45,31 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:wither_skeleton_skull"
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "condition": "minecraft:killed_by_player"
+          "name": "minecraft:iron_ingot"
         },
         {
-          "chance": 0.025,
-          "condition": "minecraft:random_chance_with_looting",
-          "looting_multiplier": 0.01
-        }
-      ],
-      "entries": [
+          "type": "minecraft:item",
+          "name": "minecraft:carrot"
+        },
         {
           "type": "minecraft:item",
-          "name": "minecraft:netherite_scrap"
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "flags": {
+                      "is_on_fire": true
+                    }
+                  }
+                }
+              ],
+              "function": "minecraft:furnace_smelt"
+            }
+          ],
+          "name": "minecraft:potato"
         }
       ],
       "rolls": 1.0
@@ -114,7 +89,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "todust:perfect_skull"
+          "name": "todust:perfect_rotten_flesh"
         }
       ],
       "rolls": 1.0

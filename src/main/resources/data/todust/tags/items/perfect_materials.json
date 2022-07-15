@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "todust:perfect_cobblestone",
+    "todust:perfect_stone",
+    "todust:perfect_deepslate",
+    "todust:perfect_netherrack",
+    "todust:perfect_blackstone",
+    "todust:perfect_basalt",
+    "todust:perfect_calcite",
+    "todust:perfect_andesite",
+    "todust:perfect_granite",
+    "todust:perfect_diorite",
+    "todust:perfect_dirt",
+    "todust:perfect_sand",
+    "todust:perfect_gravel",
+    "todust:perfect_ice",
+    "todust:perfect_mud",
+    "todust:perfect_soul_sand",
+    "todust:perfect_clay",
+    "todust:perfect_obsidian",
+    "todust:perfect_end_stone"
+  ]
+}

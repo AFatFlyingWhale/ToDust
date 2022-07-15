@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "todust:cow_catalyst",
+    "todust:pig_catalyst",
+    "todust:sheep_catalyst",
+    "todust:chicken_catalyst",
+    "todust:rabbit_catalyst",
+    "todust:fish_catalyst",
+    "todust:bee_catalyst",
+    "todust:goat_catalyst",
+    "todust:zombie_catalyst",
+    "todust:skeleton_catalyst",
+    "todust:creeper_catalyst",
+    "todust:spider_catalyst",
+    "todust:enderman_catalyst",
+    "todust:pillager_catalyst",
+    "todust:slime_catalyst",
+    "todust:blaze_catalyst",
+    "todust:magma_cube_catalyst",
+    "todust:phantom_catalyst",
+    "todust:guardian_catalyst",
+    "todust:ghast_catalyst",
+    "todust:shulker_catalyst",
+    "todust:drowned_catalyst",
+    "todust:witch_catalyst",
+    "todust:wither_skeleton_catalyst",
+    "todust:wither_catalyst",
+    "todust:ender_dragon_catalyst",
+    "todust:warden_catalyst",
+    "todust:elder_guardian_catalyst"
+  ]
+}

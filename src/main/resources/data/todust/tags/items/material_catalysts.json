@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "todust:cobblestone_catalyst",
+    "todust:stone_catalyst",
+    "todust:deepslate_catalyst",
+    "todust:netherrack_catalyst",
+    "todust:blackstone_catalyst",
+    "todust:basalt_catalyst",
+    "todust:calcite_catalyst",
+    "todust:andesite_catalyst",
+    "todust:granite_catalyst",
+    "todust:diorite_catalyst",
+    "todust:dirt_catalyst",
+    "todust:sand_catalyst",
+    "todust:gravel_catalyst",
+    "todust:ice_catalyst",
+    "todust:mud_catalyst",
+    "todust:soul_sand_catalyst",
+    "todust:clay_catalyst",
+    "todust:obsidian_catalyst",
+    "todust:end_stone_catalyst"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "todust:earth_dust_powder"
+    },
+    {
+      "item": "minecraft:pointed_dripstone"
+    },
+    {
+      "item": "todust:water_dust_powder"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:pointed_dripstone"
+  }
+}

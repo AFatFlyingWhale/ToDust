@@ -18,7 +18,8 @@ public enum ModToolMaterials implements ToolMaterial {
     //NETHERITE(MiningLevels.NETHERITE, 2031, 9.0f, 4.0f, 15, () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
     MITHRIL(MiningLevels.IRON, 680, 10.0f, 3.5f, 24, () -> Ingredient.ofItems(ModItems.MITHRIL_INGOT)),
     ORICHALCUM(MiningLevels.DIAMOND, 1480, 8.0f, 4.5f, 24, () -> Ingredient.ofItems(ModItems.ORICHALCUM_INGOT)),
-    ADAMANTINE(MiningLevels.DIAMOND, 1920, 8.0f, 3f, 24, () -> Ingredient.ofItems(ModItems.ADAMANTINE_INGOT));
+    ADAMANTINE(MiningLevels.DIAMOND, 1920, 8.0f, 3f, 24, () -> Ingredient.ofItems(ModItems.ADAMANTINE_INGOT)),
+    MALICHOR(MiningLevels.DIAMOND, 4096, 10.0f, 6f, 30, () -> Ingredient.ofItems(ModItems.MALICHOR_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;
