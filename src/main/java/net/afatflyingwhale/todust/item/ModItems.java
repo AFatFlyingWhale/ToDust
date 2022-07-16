@@ -16,9 +16,14 @@ import net.afatflyingwhale.todust.item.custom.perfects.PerfectItem;
 import net.afatflyingwhale.todust.item.custom.tooltypes.ModAxeItem;
 import net.afatflyingwhale.todust.item.custom.tooltypes.ModHoeItem;
 import net.afatflyingwhale.todust.item.custom.tooltypes.ModPickaxeItem;
+import net.afatflyingwhale.todust.item.custom.tooltypes.axe_effect_types.ModHungerAxeItem;
+import net.afatflyingwhale.todust.item.custom.tooltypes.axe_effect_types.ModSlownessAxeItem;
+import net.afatflyingwhale.todust.item.custom.tooltypes.axe_effect_types.ModWeaknessAxeItem;
+import net.afatflyingwhale.todust.item.custom.tooltypes.axe_effect_types.ModWitherAxeItem;
 import net.afatflyingwhale.todust.item.custom.tooltypes.sword_effect_types.ModHungerSwordItem;
 import net.afatflyingwhale.todust.item.custom.tooltypes.sword_effect_types.ModSlownessSwordItem;
 import net.afatflyingwhale.todust.item.custom.tooltypes.sword_effect_types.ModWeaknessSwordItem;
+import net.afatflyingwhale.todust.item.custom.tooltypes.sword_effect_types.ModWitherSwordItem;
 import net.afatflyingwhale.todust.sounds.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.client.render.debug.BeeDebugRenderer;
@@ -126,7 +131,7 @@ public class ModItems {
     public static final Item MITHRIL_SWORD = registerItem("mithril_sword",
             new ModWeaknessSwordItem(ModToolMaterials.MITHRIL, 2, -1.6f, new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item MITHRIL_AXE = registerItem("mithril_axe",
-            new ModAxeItem(ModToolMaterials.MITHRIL, 4, -2.6f, new FabricItemSettings().group(ModItemGroup.TODUST)));
+            new ModWeaknessAxeItem(ModToolMaterials.MITHRIL, 4, -2.6f, new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item MITHRIL_SHOVEL = registerItem("mithril_shovel",
             new ShovelItem(ModToolMaterials.MITHRIL, 0, -3f, new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item MITHRIL_HOE = registerItem("mithril_hoe",
@@ -146,7 +151,7 @@ public class ModItems {
     public static final Item ORICHALCUM_SWORD = registerItem("orichalcum_sword",
             new ModHungerSwordItem(ModToolMaterials.ORICHALCUM, 2, -2.4f, new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item ORICHALCUM_AXE = registerItem("orichalcum_axe",
-            new ModAxeItem(ModToolMaterials.ORICHALCUM, 4, -3f, new FabricItemSettings().group(ModItemGroup.TODUST)));
+            new ModHungerAxeItem(ModToolMaterials.ORICHALCUM, 4, -3f, new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item ORICHALCUM_SHOVEL = registerItem("orichalcum_shovel",
             new ShovelItem(ModToolMaterials.ORICHALCUM, 0, -3f, new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item ORICHALCUM_HOE = registerItem("orichalcum_hoe",
@@ -166,7 +171,7 @@ public class ModItems {
     public static final Item ADAMANTINE_SWORD = registerItem("adamantine_sword",
             new ModSlownessSwordItem(ModToolMaterials.ADAMANTINE, 3, -2.4f, new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item ADAMANTINE_AXE = registerItem("adamantine_axe",
-            new ModAxeItem(ModToolMaterials.ADAMANTINE, 5, -3f, new FabricItemSettings().group(ModItemGroup.TODUST)));
+            new ModSlownessAxeItem(ModToolMaterials.ADAMANTINE, 5, -3f, new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item ADAMANTINE_SHOVEL = registerItem("adamantine_shovel",
             new ShovelItem(ModToolMaterials.ADAMANTINE, 0, -3f, new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item ADAMANTINE_HOE = registerItem("adamantine_hoe",
@@ -183,7 +188,11 @@ public class ModItems {
     public static final Item ADAMANTINE_BOOTS = registerItem("adamantine_boots",
             new ArmorItem(ModArmorMaterials.ADAMANTINE, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.TODUST)));
     // Malichor
-
+    public static final Item MALICHOR_SWORD = registerItem("malichor_sword", new ModWitherSwordItem(ModToolMaterials.MALICHOR, 3, -2.0f, new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item MALICHOR_AXE = registerItem("malichor_axe", new ModWitherAxeItem(ModToolMaterials.MALICHOR, 6, -2.8f, new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item MALICHOR_SHOVEL = registerItem("malichor_shovel", new ShovelItem(ModToolMaterials.MALICHOR, 0, -3.0f, new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item MALICHOR_HOE = registerItem("malichor_hoe", new ModHoeItem(ModToolMaterials.MALICHOR, 0, 0f, new FabricItemSettings().group(ModItemGroup.TODUST)));
+    public static final Item MALICHOR_PICKAXE = registerItem("malichor_pickaxe", new ModPickaxeItem(ModToolMaterials.MALICHOR, 0, -2.8f, new FabricItemSettings().group(ModItemGroup.TODUST)));
 
     public static final Item MALICHOR_HELMET = registerItem("malichor_helmet", new ArmorItem(ModArmorMaterials.MALICHOR, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.TODUST)));
     public static final Item MALICHOR_CHESTPLATE = registerItem("malichor_chestplate", new ArmorItem(ModArmorMaterials.MALICHOR, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.TODUST)));

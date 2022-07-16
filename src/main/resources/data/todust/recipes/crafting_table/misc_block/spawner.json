@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CBC",
+    "BAB",
+    "CBC"
+  ],
+  "key": {
+    "A": {
+      "tag": "todust:mob_catalysts"
+    },
+    "B": {
+      "item": "todust:perfect_relic_iron_block"
+    },
+    "C": {
+      "tag": "todust:perfect_dusts"
+    }
+  },
+  "result": {
+    "count": 1,
+    "item": "minecraft:spawner"
+  }
+}

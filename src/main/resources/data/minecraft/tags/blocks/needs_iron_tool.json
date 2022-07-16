@@ -13,11 +13,12 @@
     "todust:raw_relic_iron_block",
     "todust:raw_relic_gold_block",
     "todust:raw_mithril_block",
-
     "todust:red_heartnut_log",
     "todust:red_heartnut_wood",
     "todust:stripped_red_heartnut_log",
     "todust:stripped_red_heartnut_wood",
-    "todust:red_heartnut_planks"
+    "todust:red_heartnut_planks",
+    "#todust:compact_blocks",
+    "#todust:double_compact_blocks"
   ]
 }

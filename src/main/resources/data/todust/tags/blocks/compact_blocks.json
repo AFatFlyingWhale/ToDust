@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "todust:compact_cobblestone",
+    "todust:compact_stone",
+    "todust:compact_deepslate",
+    "todust:compact_netherrack",
+    "todust:compact_blackstone",
+    "todust:compact_basalt",
+    "todust:compact_calcite",
+    "todust:compact_andesite",
+    "todust:compact_granite",
+    "todust:compact_diorite",
+    "todust:compact_dirt",
+    "todust:compact_sand",
+    "todust:compact_gravel",
+    "todust:compact_ice",
+    "todust:compact_mud",
+    "todust:compact_soul_sand",
+    "todust:compact_clay",
+    "todust:compact_obsidian",
+    "todust:compact_end_stone"
+  ]
+}

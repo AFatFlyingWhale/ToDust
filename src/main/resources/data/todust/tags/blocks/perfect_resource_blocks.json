@@ -18,6 +18,8 @@
     "todust:perfect_gilded_steel_block",
     "todust:perfect_malichor_block",
     "todust:perfect_quartz_block",
-    "todust:perfect_glowstone_block"
+    "todust:perfect_glowstone_block",
+    "todust:perfect_amethyst_block",
+    "#todust:perfect_dust_blocks"
   ]
 }

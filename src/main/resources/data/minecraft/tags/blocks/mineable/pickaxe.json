@@ -7,6 +7,9 @@
     "#todust:nether_ores",
     "#todust:metal_blocks",
     "todust:pyrecoal_block",
-    "todust:gilded_steel_block"
+    "todust:gilded_steel_block",
+    "#todust:perfect_resource_blocks",
+    "#todust:compact_blocks",
+    "#todust:double_compact_blocks"
   ]
 }

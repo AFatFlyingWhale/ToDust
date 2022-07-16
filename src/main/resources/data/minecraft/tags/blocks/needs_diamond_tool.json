@@ -8,6 +8,7 @@
     "todust:deepslate_adamantite_ore",
     "todust:adamantine_block",
     "todust:raw_orichalcite_block",
-    "todust:raw_adamantite_block"
+    "todust:raw_adamantite_block",
+    "#todust:perfect_resource_blocks"
   ]
 }
