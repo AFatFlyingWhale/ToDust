@@ -6,10 +6,10 @@
     "CAC"
   ],
   "key": {
-    "A": {
-      "item": "todust:perfect_totem"
-    },
     "B": {
+      "item": "todust:pillager_catalyst"
+    },
+    "A": {
       "item": "todust:perfect_egg"
     },
     "C": {

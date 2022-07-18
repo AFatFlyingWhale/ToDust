@@ -6,10 +6,10 @@
     "CAC"
   ],
   "key": {
-    "A": {
-      "item": "todust:perfect_gunpowder"
-    },
     "B": {
+      "item": "todust:creeper_catalyst"
+    },
+    "A": {
       "item": "todust:perfect_egg"
     },
     "C": {

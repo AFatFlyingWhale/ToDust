@@ -6,10 +6,10 @@
     "CAC"
   ],
   "key": {
-    "A": {
-      "item": "todust:perfect_sponge"
-    },
     "B": {
+      "item": "todust:elder_guardian_catalyst"
+    },
+    "A": {
       "item": "todust:perfect_egg"
     },
     "C": {

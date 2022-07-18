@@ -2,12 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "CAC",
-    "AAA",
+    "ABA",
     "CAC"
   ],
   "key": {
     "A": {
       "item": "todust:perfect_egg"
+    },
+    "B": {
+      "item": "todust:chicken_catalyst"
     },
     "C": {
       "tag": "todust:cut_dusts"

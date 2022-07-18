@@ -6,10 +6,10 @@
     "CAC"
   ],
   "key": {
-    "A": {
-      "item": "todust:perfect_horn"
-    },
     "B": {
+      "item": "todust:goat_catalyst"
+    },
+    "A": {
       "item": "todust:perfect_egg"
     },
     "C": {

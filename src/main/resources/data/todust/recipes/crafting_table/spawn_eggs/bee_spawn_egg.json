@@ -6,10 +6,10 @@
     "CAC"
   ],
   "key": {
-    "A": {
-      "item": "todust:perfect_honeycomb"
-    },
     "B": {
+      "item": "todust:bee_catalyst"
+    },
+    "A": {
       "item": "todust:perfect_egg"
     },
     "C": {

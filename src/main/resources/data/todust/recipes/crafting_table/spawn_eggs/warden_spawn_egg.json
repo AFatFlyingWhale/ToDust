@@ -6,10 +6,10 @@
     "CAC"
   ],
   "key": {
-    "A": {
-      "item": "todust:perfect_heart"
-    },
     "B": {
+      "item": "todust:warden_catalyst"
+    },
+    "A": {
       "item": "todust:perfect_egg"
     },
     "C": {
